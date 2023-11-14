@@ -1,0 +1,55 @@
+.table-responsive td{
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+.input-group-table{
+    width: 200px;
+}
+.table-progress{
+    width: 200px;
+}
+
+.data-card .card-header{
+    background-color: #397CCF !important;
+    color: white !important;
+}
+
+.data-card .card-body{
+    background-color: #1951A2;
+    color: white !important;
+}
+
+.data-card thead{
+    background-color: #397CCF !important;
+    color: white !important;
+}
+
+.bg-dark-blue{
+    background-color: #1951A2 !important;
+    color: white !important;
+}
+
+.bg-medium-blue{
+    background-color: #397CCF  !important;
+    color: white !important;
+}
+
+.btn-outline-warning{
+    background-color: white;
+}
+
+.border-dark-primary{
+    border-color: #1951A2 !important;
+}
+
+.bg-dark-primary{
+    background-color: #1951A2 !important;
+}
+.recommended-policies{
+    height: 250px;
+}
+
+.recommended-policies .progress{
+    height: 0.625rem;
+}

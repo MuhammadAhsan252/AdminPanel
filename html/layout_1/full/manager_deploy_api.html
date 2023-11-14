@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Limitless - Responsive Web Application Kit by Eugene Kopyov</title>
+
+	<!-- Global stylesheets -->
+	<link href="../../../assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
+	<link href="../../../assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/ltr/all.min.css" id="stylesheet" rel="stylesheet" type="text/css">
+    <link href="assets/css/ltr/additional_styling.css" id="stylesheet" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<!-- /global stylesheets -->
+
+	<!-- Core JS files -->
+	<script src="../../../assets/demo/demo_configurator.js"></script>
+	<script src="../../../assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script src="../../../assets/js/vendor/visualization/d3/d3.min.js"></script>
+	<script src="../../../assets/js/vendor/visualization/d3/d3_tooltip.js"></script>
+
+	<script src="assets/js/app.js"></script>
+	<script src="../../../assets/demo/pages/dashboard.js"></script>
+	<script src="../../../assets/demo/charts/pages/dashboard/streamgraph.js"></script>
+	<script src="../../../assets/demo/charts/pages/dashboard/sparklines.js"></script>
+	<script src="../../../assets/demo/charts/pages/dashboard/lines.js"></script>	
+	<script src="../../../assets/demo/charts/pages/dashboard/areas.js"></script>
+	<script src="../../../assets/demo/charts/pages/dashboard/donuts.js"></script>
+	<script src="../../../assets/demo/charts/pages/dashboard/bars.js"></script>
+	<script src="../../../assets/demo/charts/pages/dashboard/progress.js"></script>
+	<script src="../../../assets/demo/charts/pages/dashboard/heatmaps.js"></script>
+	<script src="../../../assets/demo/charts/pages/dashboard/pies.js"></script>
+	<script src="../../../assets/demo/charts/pages/dashboard/bullets.js"></script>
+	<!-- /theme JS files -->
+
+</head>
+
+<body>
+
+	<!-- Main navbar -->
+	<div class="navbar navbar-light navbar-expand-lg navbar-static border-bottom border-opacity-10">
+		<div class="container-fluid">
+			<div class="d-flex d-lg-none me-2">
+				<button type="button" class="navbar-toggler sidebar-mobile-main-toggle rounded-pill">
+					<i class="ph-list"></i>
+				</button>
+			</div>
+
+			<div class="navbar-brand flex-1 flex-lg-0">
+				<a href="index.html" class="d-inline-flex align-items-center">
+					<img src="../../../assets/images/logo_icon.svg" alt="">
+					<img src="../../../assets/images/logo_text_dark.svg" class="d-none d-sm-inline-block h-16px ms-3" alt="">
+				</a>
+			</div>
+
+			<ul class="nav flex-row justify-content-end order-1 order-lg-2">
+
+				<li class="nav-item nav-item-dropdown-lg dropdown ms-lg-2">
+					<a href="#" class="navbar-nav-link align-items-center rounded-pill p-1" data-bs-toggle="dropdown">
+						<div class="status-indicator-container">
+							<img src="../../../assets/images/demo/users/face11.jpg" class="w-32px h-32px rounded-pill" alt="">
+							<span class="status-indicator bg-success"></span>
+						</div>
+						<span class="d-none d-lg-inline-block mx-lg-2">Enrico Caruso <br>Manager</span>
+					</a>
+
+					<div class="dropdown-menu dropdown-menu-end">
+						<a href="#" class="dropdown-item">
+							<i class="ph-sign-out me-2"></i>
+							Logout
+						</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /main navbar -->
+
+
+	<!-- Page content -->
+	<div class="page-content">
+
+		<!-- Main sidebar -->
+		<div class="sidebar sidebar-light sidebar-main sidebar-expand-lg">
+
+			<!-- Sidebar content -->
+			<div class="sidebar-content">
+
+				<!-- Sidebar header -->
+				<div class="sidebar-section">
+					<div class="sidebar-section-body d-flex justify-content-center">
+						<h5 class="sidebar-resize-hide flex-grow-1 my-auto">Navigation</h5>
+
+						<div>
+							<button type="button" class="btn btn-light btn-icon btn-sm rounded-pill border-transparent sidebar-control sidebar-main-resize d-none d-lg-inline-flex">
+								<i class="ph-arrows-left-right"></i>
+							</button>
+
+							<button type="button" class="btn btn-light btn-icon btn-sm rounded-pill border-transparent sidebar-mobile-main-toggle d-lg-none">
+								<i class="ph-x"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- /sidebar header -->
+
+
+				<!-- Main navigation -->
+				<div class="sidebar-section">
+					<ul class="nav nav-sidebar" data-nav-type="accordion">
+
+						<!-- Main -->
+						<li class="nav-item-header pt-0">
+							<div class="text-uppercase fs-sm lh-sm opacity-50 sidebar-resize-hide">Main</div>
+							<i class="ph-dots-three sidebar-resize-show"></i>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">
+								<i class="fa-solid fa-list-ul"></i>
+								<span>AI Applications</span>
+							</a>
+							<ul class="nav-group-sub collapse">
+								<li class="nav-item"><a href="manager_overview.html" class="nav-link">Overview</a></li>
+								<li class="nav-item"><a href="manager_pending.html" class="nav-link">Pending</a></li>
+								<li class="nav-item"><a href="manager_review_api.html" class="nav-link">Review APIs</a></li>
+								<li class="nav-item"><a href="manager_deploy_api.html" class="nav-link">Deploy AI provider</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">
+								<i class="fa-regular fa-shield"></i>
+								<span>Policy Compliance</span>
+							</a>
+							<ul class="nav-group-sub collapse">
+								<li class="nav-item"><a href="manager_policy_summary.html" class="nav-link">Overview</a></li>
+								<li class="nav-item"><a href="manager_policy_compliance.html" class="nav-link">Compliance Review</a></li>
+								<li class="nav-item"><a href="manager_policy_violation.html" class="nav-link">Violations Log</a></li>
+							</ul>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">
+								<i class="fa-solid fa-guarani-sign"></i>
+								<span>Policy Admin</span>
+							</a>
+							<ul class="nav-group-sub collapse">
+								<li class="nav-item"><a href="manager_create_policy.html" class="nav-link">Create Policy</a></li>
+								<li class="nav-item"><a href="manager_internal_policies.html" class="nav-link">View Internal Policies</a></li>
+								<li class="nav-item"><a href="manager_external_policies.html" class="nav-link">View External Policies</a></li>
+							</ul>
+						</li>
+                        <li class="nav-item">
+							<a href="manager_risk_visualizer.html" class="nav-link">
+								<i class="fa-solid fa-circle-info"></i>
+								<span>
+									Risks Visualizer
+								</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="manager_report_module.html" class="nav-link">
+								<i class="fa-solid fa-file"></i>
+								<span>Report Module</span>
+							</a>
+						</li>
+						<li class="nav-item nav-item-submenu">
+							<a href="#" class="nav-link">
+								<i class="fa-solid fa-user-plus"></i>
+								<span>Team</span>
+							</a>
+							<ul class="nav-group-sub collapse">
+								<li class="nav-item"><a href="manager_add_user.html" class="nav-link">Add User</a></li>
+								<li class="nav-item"><a href="manager_view_users.html" class="nav-link">View users</a></li>
+								<li class="nav-item"><a href="manager_team_permissions.html" class="nav-link">Permissions</a></li>
+							</ul>
+						</li>
+						<!-- /page kits -->
+
+					</ul>
+				</div>
+				<!-- /main navigation -->
+
+			</div>
+			<!-- /sidebar content -->
+			
+		</div>
+		<!-- /main sidebar -->
+
+
+		<!-- Main content -->
+		<div class="content-wrapper">
+
+			<!-- Inner content -->
+			<div class="content-inner">
+
+				<!-- Page header -->
+
+				<!-- /page header -->
+
+
+				<!-- Content area -->
+				<div class="content">
+
+					<!-- Main charts -->
+
+					<!-- /main charts -->
+
+
+					<!-- Dashboard content -->
+					<div class="row">
+						<div class="col-12">
+							<h2 class="mb-3">Deploy New AI providers</h2>
+							<p>Configure the API gateaway for new AI vendors and use them later to launch secure APIs that comply with company policy.</p>
+						</div>
+						<div class="col-12">
+
+							<!-- Marketing campaigns -->
+							<div class="card">
+
+                                <div class="card-body">
+                                    <h3>New Provider API</h3>
+                                    <form action="#">
+                                        <div class="mb-3 col-md-6">
+                                            <label class="form-label">AI Vendor Name</label>
+                                            <input type="text" class="form-control" placeholder="AI Vendor Name">
+                                        </div>
+
+                                        <div class="mb-3 col-md-6">
+                                            <label class="form-label">AI Vendor Endpoint API</label>
+                                            <input type="text" class="form-control" placeholder="AI Vendor Endpoint API">
+                                        </div>
+
+                                        <div class="mb-3 col-md-6">
+                                            <label class="form-label">Description</label>
+                                            <input type="text" class="form-control" placeholder="Description">
+                                        </div>
+
+                                        <div class="d-flex align-items-center">
+                                            <button type="submit" class="btn btn-primary">Generate IdealTeam API proxy</button>
+                                        </div>
+
+                                        <div class="mb-3 mt-5 col-md-6">
+                                            <label class="form-label">Description</label>
+                                            <div class="input-group">
+                                                <input type="password" value="password" id="passwordInput" class="form-control">
+                                                <span class="input-group-text" id="togglePasswordBtn">
+                                                  <i class="fa fa-eye-slash"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="d-flex align-items-center">
+                                            <button type="submit" class="btn btn-primary">Add to API Provider List</button>
+                                        </div>
+                                    </form>
+                                </div>
+							</div>
+							<!-- /marketing campaigns -->
+
+						</div>
+					</div>
+					<!-- /dashboard content -->
+
+				</div>
+				<!-- /content area -->
+
+
+				<!-- Footer -->
+				<div class="navbar navbar-sm navbar-footer border-top">
+					<div class="container-fluid">
+						<span>&copy; 2022 <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328">Limitless Web App Kit</a></span>
+
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="https://kopyov.ticksy.com/" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-lifebuoy"></i>
+										<span class="d-none d-md-inline-block ms-2">Support</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://demo.interface.club/limitless/demo/Documentation/index.html" class="navbar-nav-link navbar-nav-link-icon rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-file-text"></i>
+										<span class="d-none d-md-inline-block ms-2">Docs</span>
+									</div>
+								</a>
+							</li>
+							<li class="nav-item ms-md-1">
+								<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="navbar-nav-link navbar-nav-link-icon text-primary bg-primary bg-opacity-10 fw-semibold rounded" target="_blank">
+									<div class="d-flex align-items-center mx-md-1">
+										<i class="ph-shopping-cart"></i>
+										<span class="d-none d-md-inline-block ms-2">Purchase</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- /footer -->
+
+			</div>
+			<!-- /inner content -->
+
+		</div>
+		<!-- /main content -->
+
+	</div>
+	<!-- /page content -->
+
+
+	<!-- Notifications -->
+
+	<!-- /notifications -->
+
+
+	<!-- Demo config -->
+	<!-- <div class="offcanvas offcanvas-end" tabindex="-1" id="demo_config">
+		<div class="position-absolute top-50 end-100 visible">
+			<button type="button" class="btn btn-primary btn-icon translate-middle-y rounded-end-0" data-bs-toggle="offcanvas" data-bs-target="#demo_config">
+				<i class="ph-gear"></i>
+			</button>
+		</div>
+
+		<div class="offcanvas-header border-bottom py-0">
+			<h5 class="offcanvas-title py-3">Demo configuration</h5>
+			<button type="button" class="btn btn-light btn-sm btn-icon border-transparent rounded-pill" data-bs-dismiss="offcanvas">
+				<i class="ph-x"></i>
+			</button>
+		</div>
+
+		<div class="offcanvas-body">
+			<div class="fw-semibold mb-2">Color mode</div>
+			<div class="list-group mb-3">
+				<label class="list-group-item list-group-item-action form-check border-width-1 rounded mb-2">
+					<div class="d-flex flex-fill my-1">
+						<div class="form-check-label d-flex me-2">
+							<i class="ph-sun ph-lg me-3"></i>
+							<div>
+								<span class="fw-bold">Light theme</span>
+								<div class="fs-sm text-muted">Set light theme or reset to default</div>
+							</div>
+						</div>
+						<input type="radio" class="form-check-input cursor-pointer ms-auto" name="main-theme" value="light" checked>
+					</div>
+				</label>
+
+				<label class="list-group-item list-group-item-action form-check border-width-1 rounded mb-2">
+					<div class="d-flex flex-fill my-1">
+						<div class="form-check-label d-flex me-2">
+							<i class="ph-moon ph-lg me-3"></i>
+							<div>
+								<span class="fw-bold">Dark theme</span>
+								<div class="fs-sm text-muted">Switch to dark theme</div>
+							</div>
+						</div>
+						<input type="radio" class="form-check-input cursor-pointer ms-auto" name="main-theme" value="dark">
+					</div>
+				</label>
+
+				<label class="list-group-item list-group-item-action form-check border-width-1 rounded mb-0">
+					<div class="d-flex flex-fill my-1">
+						<div class="form-check-label d-flex me-2">
+							<i class="ph-translate ph-lg me-3"></i>
+							<div>
+								<span class="fw-bold">Auto theme</span>
+								<div class="fs-sm text-muted">Set theme based on system mode</div>
+							</div>
+						</div>
+						<input type="radio" class="form-check-input cursor-pointer ms-auto" name="main-theme" value="auto">
+					</div>
+				</label>
+			</div>
+
+			<div class="fw-semibold mb-2">Direction</div>
+			<div class="list-group mb-3">
+				<label class="list-group-item list-group-item-action form-check border-width-1 rounded mb-0">
+					<div class="d-flex flex-fill my-1">
+						<div class="form-check-label d-flex me-2">
+							<i class="ph-translate ph-lg me-3"></i>
+							<div>
+								<span class="fw-bold">RTL direction</span>
+								<div class="text-muted">Toggle between LTR and RTL</div>
+							</div>
+						</div>
+						<input type="checkbox" name="layout-direction" value="rtl" class="form-check-input cursor-pointer m-0 ms-auto">
+					</div>
+				</label>
+			</div>
+
+			<div class="fw-semibold mb-2">Layouts</div>
+			<div class="row">
+				<div class="col-12">
+					<a href="index.html" class="d-block mb-3">
+						<img src="https://demo.interface.club/limitless/assets/images/layouts/layout_1.png" class="img-fluid img-thumbnail bg-primary bg-opacity-20 border-primary" alt="">
+					</a>
+				</div>
+				<div class="col-12">
+					<a href="../../layout_2/full/index.html" class="d-block mb-3">
+						<img src="https://demo.interface.club/limitless/assets/images/layouts/layout_2.png" class="img-fluid img-thumbnail" alt="">
+					</a>
+				</div>
+				<div class="col-12">
+					<a href="../../layout_3/full/index.html" class="d-block mb-3">
+						<img src="https://demo.interface.club/limitless/assets/images/layouts/layout_3.png" class="img-fluid img-thumbnail" alt="">
+					</a>
+				</div>
+				<div class="col-12">
+					<a href="../../layout_4/full/index.html" class="d-block mb-3">
+						<img src="https://demo.interface.club/limitless/assets/images/layouts/layout_4.png" class="img-fluid img-thumbnail" alt="">
+					</a>
+				</div>
+				<div class="col-12">
+					<a href="../../layout_5/full/index.html" class="d-block mb-3">
+						<img src="https://demo.interface.club/limitless/assets/images/layouts/layout_5.png" class="img-fluid img-thumbnail" alt="">
+					</a>
+				</div>
+				<div class="col-12">
+					<a href="../../layout_6/full/index.html" class="d-block">
+						<img src="https://demo.interface.club/limitless/assets/images/layouts/layout_6.png" class="img-fluid img-thumbnail" alt="">
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="border-top text-center py-2 px-3">
+			<a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328?ref=kopyov" class="btn btn-yellow fw-semibold w-100 my-1" target="_blank">
+				<i class="ph-shopping-cart me-2"></i>
+				Purchase Limitless
+			</a>
+		</div>
+	</div> -->
+	<!-- /demo config -->
+    <script>
+        const passwordInput = document.getElementById('passwordInput');
+        const togglePasswordBtn = document.getElementById('togglePasswordBtn');
+        const copyToClipboardBtn = document.getElementById('copyToClipboardBtn');
+
+        togglePasswordBtn.addEventListener('click', () => {
+        const isPasswordVisible = passwordInput.type === 'text';
+
+        if (isPasswordVisible) {
+            passwordInput.type = 'password';
+            togglePasswordBtn.querySelector('i').classList.remove('fa-eye');
+            togglePasswordBtn.querySelector('i').classList.add('fa-eye-slash');
+        } else {
+            passwordInput.type = 'text';
+            togglePasswordBtn.querySelector('i').classList.remove('fa-eye-slash');
+            togglePasswordBtn.querySelector('i').classList.add('fa-eye');
+        }
+        });
+
+        copyToClipboardBtn.addEventListener('click', () => {
+        navigator.clipboard.writeText(passwordInput.value);
+        });
+      </script>
+</body>
+</html>
