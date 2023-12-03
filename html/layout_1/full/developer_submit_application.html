@@ -447,7 +447,7 @@
 							<!-- Marketing campaigns -->
                             <div class="card">
         
-                                <form class="wizard-form steps-basic" action="#">
+                                <form class="wizard-form steps-basic" action="#" id="form1">
                                     <h6>1: Name</h6>
                                     <fieldset>
                                         <div class="row">
@@ -932,6 +932,11 @@
 				submitButton.style.display = 'none';
 				// Remove the 'd-none' class from the form
 				form.classList.remove('d-none');
+			});
+
+			var form1 = document.getElementById('form1');
+			form1.addEventListener("submit", function(event) {
+				event.preventDefault();
 			});
 		});
 	</script>
