@@ -544,6 +544,11 @@
                                         </div>
                                     </fieldset>
 
+									<div class="row">
+										<div class="col-12">
+											<button class="btn btn-primary d-none float-end m-5"  id="form-submitted-button">Submit</button>
+										</div>
+									</div>
                                     <div class="row d-none m-3" id="form-submitted">
                                         <div class="col-lg-6">
                                             <h5>Application submitted</h5>
@@ -914,5 +919,21 @@
 		</div>
 	</div> -->
 	<!-- /demo config -->
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			// Get the Generate button
+			var submitButton = document.getElementById('form-submitted-button');
+
+			// Get the table element
+			var form = document.getElementById('form-submitted');
+
+			// Add click event listener to the Generate button
+			submitButton.addEventListener('click', function() {
+				submitButton.style.display = 'none';
+				// Remove the 'd-none' class from the form
+				form.classList.remove('d-none');
+			});
+		});
+	</script>
 </body>
 </html>

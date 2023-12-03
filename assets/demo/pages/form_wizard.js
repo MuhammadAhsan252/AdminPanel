@@ -33,12 +33,12 @@ const FormWizard = function() {
             labels: {
                 previous: document.dir == 'rtl' ? '<i class="ph-arrow-circle-right me-2"></i> Previous' : '<i class="ph-arrow-circle-left me-2"></i> Previous',
                 next: document.dir == 'rtl' ? 'Next <i class="ph-arrow-circle-left ms-2"></i>' : 'Next <i class="ph-arrow-circle-right ms-2"></i>',
-                finish: 'Submit form <i class="ph-paper-plane-tilt ms-2"></i>'
+                finish: 'Next <i class="ph-arrow-circle-right ms-2"></i>'
             },
             onFinished: function (event, currentIndex) {
                 $("fieldset").hide()
                 $('.actions.clearfix').hide()
-                $('#form-submitted').removeClass('d-none')
+                $('#form-submitted-button').removeClass('d-none')
             }
         });
 
