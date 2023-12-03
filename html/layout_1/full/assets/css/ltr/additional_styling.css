@@ -47,9 +47,41 @@
     background-color: #1951A2 !important;
 }
 .recommended-policies{
-    height: 250px;
+    height: 280px;
 }
 
 .recommended-policies .progress{
     height: 0.625rem;
+}
+
+.checkbox-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    border: 1px solid #ccc;
+    z-index: 1;
+}
+
+.checkbox-dropdown-content label {
+    display: block;
+    padding: 8px 12px; /* Adjust padding as needed */
+}
+
+.checkbox-dropdown-content input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.checkbox-dropdown-toggle {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+}
+
+.checkbox-dropdown-toggle::after {
+    content: "\25BE"; /* Unicode for down arrow */
+}
+
+.checkbox-dropdown.active .checkbox-dropdown-content {
+    display: block;
 }

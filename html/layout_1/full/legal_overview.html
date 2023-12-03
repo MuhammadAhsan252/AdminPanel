@@ -52,23 +52,149 @@
 
 			<div class="navbar-brand flex-1 flex-lg-0">
 				<a href="index.html" class="d-inline-flex align-items-center">
-					<img src="../../../assets/images/logo_icon.svg" alt="">
-					<img src="../../../assets/images/logo_text_dark.svg" class="d-none d-sm-inline-block h-16px ms-3" alt="">
+					<img src="../../../assets/images/logo.png" alt="">
 				</a>
 			</div>
 
 			<ul class="nav flex-row justify-content-end order-1 order-lg-2">
+				<li class="nav-item nav-item-dropdown-lg dropdown ms-lg-2 mt-lg-2 me-lg-2">
+					<a href="#" class="navbar-nav-link navbar-nav-link-icon rounded-pill" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+						<i class="ph-chats"></i>
+						<span class="badge bg-yellow text-black position-absolute top-0 end-0 translate-middle-top zindex-1 rounded-pill mt-1 me-1">8</span>
+					</a>
 
+					<div class="dropdown-menu wmin-lg-300 p-0">
+						<div class="d-flex align-items-center p-3">
+							<h6 class="mb-0">Messages</h6>
+							<div class="ms-auto">
+								<a href="#" class="text-body">
+									<i class="ph-plus-circle"></i>
+								</a>
+								<a href="#search_messages" class="collapsed text-body ms-2" data-bs-toggle="collapse">
+									<i class="ph-magnifying-glass"></i>
+								</a>
+							</div>
+						</div>
+
+						<div class="collapse" id="search_messages">
+							<div class="px-3 mb-2">
+								<div class="form-control-feedback form-control-feedback-start">
+									<input type="text" class="form-control" placeholder="Search messages">
+									<div class="form-control-feedback-icon">
+										<i class="ph-magnifying-glass"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="dropdown-menu-scrollable pb-2">
+							<a href="#" class="dropdown-item align-items-start text-wrap py-2">
+								<div class="status-indicator-container me-3">
+									<img src="../../../assets/images/demo/users/face10.jpg" class="w-40px h-40px rounded-pill" alt="">
+									<span class="status-indicator bg-warning"></span>
+								</div>
+
+								<div class="flex-1">
+									<span class="fw-semibold">James Alexander</span>
+									<span class="text-muted float-end fs-sm">04:58</span>
+									<div class="text-muted">who knows, maybe that would be the best thing for me...</div>
+								</div>
+							</a>
+
+							<a href="#" class="dropdown-item align-items-start text-wrap py-2">
+								<div class="status-indicator-container me-3">
+									<img src="../../../assets/images/demo/users/face3.jpg" class="w-40px h-40px rounded-pill" alt="">
+									<span class="status-indicator bg-success"></span>
+								</div>
+
+								<div class="flex-1">
+									<span class="fw-semibold">Margo Baker</span>
+									<span class="text-muted float-end fs-sm">12:16</span>
+									<div class="text-muted">That was something he was unable to do because...</div>
+								</div>
+							</a>
+
+							<a href="#" class="dropdown-item align-items-start text-wrap py-2">
+								<div class="status-indicator-container me-3">
+									<img src="../../../assets/images/demo/users/face24.jpg" class="w-40px h-40px rounded-pill" alt="">
+									<span class="status-indicator bg-success"></span>
+								</div>
+								<div class="flex-1">
+									<span class="fw-semibold">Jeremy Victorino</span>
+									<span class="text-muted float-end fs-sm">22:48</span>
+									<div class="text-muted">But that would be extremely strained and suspicious...</div>
+								</div>
+							</a>
+
+							<a href="#" class="dropdown-item align-items-start text-wrap py-2">
+								<div class="status-indicator-container me-3">
+									<img src="../../../assets/images/demo/users/face4.jpg" class="w-40px h-40px rounded-pill" alt="">
+									<span class="status-indicator bg-grey"></span>
+								</div>
+								<div class="flex-1">
+									<span class="fw-semibold">Beatrix Diaz</span>
+									<span class="text-muted float-end fs-sm">Tue</span>
+									<div class="text-muted">What a strenuous career it is that I've chosen...</div>
+								</div>
+							</a>
+
+							<a href="#" class="dropdown-item align-items-start text-wrap py-2">
+								<div class="status-indicator-container me-3">
+									<img src="../../../assets/images/demo/users/face25.jpg" class="w-40px h-40px rounded-pill" alt="">
+									<span class="status-indicator bg-danger"></span>
+								</div>
+								<div class="flex-1">
+									<span class="fw-semibold">Richard Vango</span>
+									<span class="text-muted float-end fs-sm">Mon</span>
+									<div class="text-muted">Other travelling salesmen live a life of luxury...</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="d-flex border-top py-2 px-3">
+							<a href="#" class="text-body">
+								<i class="ph-checks me-1"></i>
+								Dismiss all
+							</a>
+							<a href="#" class="text-body ms-auto">
+								View all
+								<i class="ph-arrow-circle-right ms-1"></i>
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li class="nav-item ms-lg-2 mt-lg-2 me-lg-2">
+					<a href="#" class="navbar-nav-link navbar-nav-link-icon rounded-pill" data-bs-toggle="offcanvas" data-bs-target="#notifications">
+						<i class="ph-bell"></i>
+						<span class="badge bg-yellow text-black position-absolute top-0 end-0 translate-middle-top zindex-1 rounded-pill mt-1 me-1">2</span>
+					</a>
+				</li>
+				
 				<li class="nav-item nav-item-dropdown-lg dropdown ms-lg-2">
 					<a href="#" class="navbar-nav-link align-items-center rounded-pill p-1" data-bs-toggle="dropdown">
 						<div class="status-indicator-container">
 							<img src="../../../assets/images/demo/users/face11.jpg" class="w-32px h-32px rounded-pill" alt="">
 							<span class="status-indicator bg-success"></span>
 						</div>
-						<span class="d-none d-lg-inline-block mx-lg-2">Enrico Caruso <br>Legal</span>
+						<span class="d-none d-lg-inline-block mx-lg-2">Maria Callas <br>Legal</span>
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-end">
+						<a href="#" class="dropdown-item">
+							<i class="ph-user-circle me-2"></i>
+							My profile
+						</a>
+						<a href="#" class="dropdown-item">
+							<i class="ph-envelope-open me-2"></i>
+							My inbox
+							<span class="badge bg-primary rounded-pill ms-auto">26</span>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="dropdown-item">
+							<i class="ph-gear me-2"></i>
+							Account settings
+						</a>
 						<a href="#" class="dropdown-item">
 							<i class="ph-sign-out me-2"></i>
 							Logout
@@ -127,15 +253,6 @@
 								<li class="nav-item"><a href="legal_overview.html" class="nav-link">Overview</a></li>
 							</ul>
 						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link">
-								<i class="fa-regular fa-shield"></i>
-								<span>Policy Compliance</span>
-							</a>
-							<ul class="nav-group-sub collapse">
-								<li class="nav-item"><a href="legal_policy_summary.html" class="nav-link">Overview</a></li>
-							</ul>
-						</li>
                         <li class="nav-item">
 							<a href="legal_risk_visualizer.html" class="nav-link">
 								<i class="fa-solid fa-circle-info"></i>
@@ -169,6 +286,151 @@
 			<!-- Inner content -->
 			<div class="content-inner">
 
+				<!-- Page header -->
+				<div class="page-header page-header-light shadow">
+					<!-- <div class="page-header-content d-lg-flex">
+						<div class="d-flex">
+							<h4 class="page-title mb-0">
+								Home - <span class="fw-normal">Dashboard</span>
+							</h4>
+
+							<a href="#page_header" class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto" data-bs-toggle="collapse">
+								<i class="ph-caret-down collapsible-indicator ph-sm m-1"></i>
+							</a>
+						</div>
+
+						<div class="collapse d-lg-block my-lg-auto ms-lg-auto" id="page_header">
+							<div class="d-sm-flex align-items-center mb-3 mb-lg-0 ms-lg-3">
+								<div class="dropdown w-100 w-sm-auto">
+									<a href="#" class="d-flex align-items-center text-body lh-1 dropdown-toggle py-sm-2" data-bs-toggle="dropdown" data-bs-display="static">
+										<img src="../../../assets/images/brands/tesla.svg" class="w-32px h-32px me-2" alt="">
+										<div class="me-auto me-lg-1">
+											<div class="fs-sm text-muted mb-1">Customer</div>
+											<div class="fw-semibold">Tesla Motors Inc</div>
+										</div>
+									</a>
+
+									<div class="dropdown-menu dropdown-menu-lg-end w-100 w-lg-auto wmin-300 wmin-sm-350 pt-0">
+										<div class="d-flex align-items-center p-3">
+											<h6 class="fw-semibold mb-0">Customers</h6>
+											<a href="#" class="ms-auto">
+												View all
+												<i class="ph-arrow-circle-right ms-1"></i>
+											</a>
+										</div>
+										<a href="#" class="dropdown-item active py-2">
+											<img src="../../../assets/images/brands/tesla.svg" class="w-32px h-32px me-2" alt="">
+											<div>
+												<div class="fw-semibold">Tesla Motors Inc</div>
+												<div class="fs-sm text-muted">42 users</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item py-2">
+											<img src="../../../assets/images/brands/debijenkorf.svg" class="w-32px h-32px me-2" alt="">
+											<div>
+												<div class="fw-semibold">De Bijenkorf</div>
+												<div class="fs-sm text-muted">49 users</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item py-2">
+											<img src="../../../assets/images/brands/klm.svg" class="w-32px h-32px me-2" alt="">
+											<div>
+												<div class="fw-semibold">Royal Dutch Airlines</div>
+												<div class="fs-sm text-muted">18 users</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item py-2">
+											<img src="../../../assets/images/brands/shell.svg" class="w-32px h-32px me-2" alt="">
+											<div>
+												<div class="fw-semibold">Royal Dutch Shell</div>
+												<div class="fs-sm text-muted">54 users</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item py-2">
+											<img src="../../../assets/images/brands/bp.svg" class="w-32px h-32px me-2" alt="">
+											<div>
+												<div class="fw-semibold">BP plc</div>
+												<div class="fs-sm text-muted">23 users</div>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="vr d-none d-sm-block flex-shrink-0 my-2 mx-3"></div>
+
+								<div class="d-inline-flex mt-3 mt-sm-0">
+									<a href="#" class="status-indicator-container ms-1">
+										<img src="../../../assets/images/demo/users/face24.jpg" class="w-32px h-32px rounded-pill" alt="">
+										<span class="status-indicator bg-warning"></span>
+									</a>
+									<a href="#" class="status-indicator-container ms-1">
+										<img src="../../../assets/images/demo/users/face1.jpg" class="w-32px h-32px rounded-pill" alt="">
+										<span class="status-indicator bg-success"></span>
+									</a>
+									<a href="#" class="status-indicator-container ms-1">
+										<img src="../../../assets/images/demo/users/face3.jpg" class="w-32px h-32px rounded-pill" alt="">
+										<span class="status-indicator bg-danger"></span>
+									</a>
+									<a href="#" class="btn btn-outline-primary btn-icon w-32px h-32px rounded-pill ms-3">
+										<i class="ph-plus"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div> -->
+
+					<div class="page-header-content d-lg-flex border-top">
+						<div class="d-flex">
+							<div class="breadcrumb py-2">
+								<a href="index.html" class="breadcrumb-item"><i class="ph-house"></i></a>
+								<a href="#" class="breadcrumb-item">Home</a>
+								<span class="breadcrumb-item active">AI Applications</span>
+							</div>
+
+							<a href="#breadcrumb_elements" class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto" data-bs-toggle="collapse">
+								<i class="ph-caret-down collapsible-indicator ph-sm m-1"></i>
+							</a>
+						</div>
+
+						<div class="collapse d-lg-block ms-lg-auto" id="breadcrumb_elements">
+							<div class="d-lg-flex mb-2 mb-lg-0">
+								<a href="#" class="d-flex align-items-center text-body py-2">
+									<i class="ph-lifebuoy me-2"></i>
+									Support
+								</a>
+
+								<div class="dropdown ms-lg-3">
+									<a href="#" class="d-flex align-items-center text-body dropdown-toggle py-2" data-bs-toggle="dropdown">
+										<i class="ph-gear me-2"></i>
+										<span class="flex-1">Settings</span>
+									</a>
+
+									<div class="dropdown-menu dropdown-menu-end w-100 w-lg-auto">
+										<a href="#" class="dropdown-item">
+											<i class="ph-shield-warning me-2"></i>
+											Account security
+										</a>
+										<a href="#" class="dropdown-item">
+											<i class="ph-chart-bar me-2"></i>
+											Analytics
+										</a>
+										<a href="#" class="dropdown-item">
+											<i class="ph-lock-key me-2"></i>
+											Privacy
+										</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item">
+											<i class="ph-gear me-2"></i>
+											All settings
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+
 
 				<!-- Content area -->
 				<div class="content">
@@ -182,7 +444,7 @@
 					<div class="row">
 						<div class="col-12">
 							<h2 class="mb-3">AI Supervision Module</h2>
-							<p>The AI Supervision module enables you to have a high-level overview of all the AI projects inside your organization, as well as monitor their status, location, Legals,  and risk assesments. Utilize Filters to adjust your searching criteria.</p>
+							<p>The AI Supervision module enables you to have a high-level overview of all the AI projects within your organization, including monitoring their status, location, managers, and risk assessments. You can utilize filters to refine your search criteria.</p>
 						</div>
 						<div class="col-12">
 
@@ -197,7 +459,7 @@
 										<!-- <div id="campaign-status-pie"></div> -->
 										<div class="ms-3">
 											<div class="d-flex align-items-center">
-												<h6 class="mb-0">Domains</h6>
+												<h6 class="mb-0">Category</h6>
 											</div>
 											<select class="form-select form-select-sm w-auto flex-grow-0">
 												<option value="1">Select from List</option>
@@ -212,264 +474,94 @@
 											</select>
 										</div>
 									</div>
-
-									<div class="d-flex align-items-center mb-3 mb-sm-0">
-										<!-- <div id="campaign-status-pie"></div> -->
-										<div class="ms-3">
-											<div class="d-flex align-items-center">
-												<h6 class="mb-0">Potential Value</h6>
-											</div>
-											<span class="btn btn-sm btn-outline-warning btn-icon rounded-pill p-1 "><i class="ph-currency-dollar-simple"></i></span>
-											<span class="btn btn-sm btn-outline-warning btn-icon rounded-pill p-1 "><i class="ph-currency-dollar-simple"></i></span>
-											<span class="btn btn-sm btn-outline-warning btn-icon rounded-pill p-1 "><i class="ph-currency-dollar-simple"></i></span>
-										</div>
-									</div>
-
-									<div class="d-flex align-items-center mb-3 mb-sm-0">
-										<!-- <div id="campaign-status-pie"></div> -->
-										<div class="ms-3">
-											<div class="d-flex align-items-center">
-												<h6 class="mb-0">Operational Impact</h6>
-											</div>
-											<span class="d-inline-block btn btn-sm btn-outline-warning p-1 me-1">Low</span>
-											<span class="d-inline-block btn btn-sm btn-outline-warning p-1 me-1">Med</span>
-											<span class="d-inline-block btn btn-sm btn-outline-warning p-1 me-1">High</span>
-										</div>
-									</div>
-
-									<div class="d-flex align-items-center mb-3 mb-sm-0">
-										<!-- <div id="campaign-status-pie"></div> -->
-										<div class="ms-3">
-											<div class="d-flex align-items-center">
-												<h6 class="mb-0">Regulatory Impact</h6>
-											</div>
-											<span class="d-inline-block btn btn-sm btn-outline-warning p-1 me-1">Low</span>
-											<span class="d-inline-block btn btn-sm btn-outline-warning p-1 me-1">Med</span>
-											<span class="d-inline-block btn btn-sm btn-outline-warning p-1 me-1">High</span>
-										</div>
-									</div>
-
-									<div class="d-flex align-items-center mb-3 mb-sm-0">
-										<!-- <div id="campaign-status-pie"></div> -->
-										<div class="ms-3">
-											<div class="d-flex align-items-center">
-												<h6 class="mb-0">Users</h6>
-											</div>
-											<select class="form-select form-select-sm w-auto flex-grow-0">
-												<option value="1" selected>Select From the List</option>
-												<option value="Elena Rodriguez">Elena Rodriguez</option>
-												<option value="Claire Johnson">Claire Johnson</option>
-												<option value="Aarav Patel">Aarav Patel</option>
-												<option value="David Kim">David Kim</option>
-												<option value="Julia Ivanova">Julia Ivanova</option>
-												<option value="Marcus Wong">Marcus Wong</option>
-												<option value="Sofia García">Sofia García</option>
-												<option value="Sven Eriksson">Sven Eriksson</option>
-												<option value="Emilia Rossi">Emilia Rossi</option>
-												<option value="Maria Vásquez">Maria Vásquez</option>
-											</select>
-										</div>
-										
-									</div>
 								</div>
 
 								<div class="table-responsive">
 									<table class="table text-nowrap">
 										<thead>
 											<tr>
-												<th>Users</th>
-												<th>Domains</th>
+												<th>Category</th>
 												<th>Application name</th>
-												<th>Url</th>
-												<th>Operational Impact</th>
-												<th>Policy Compliance</th>
-												<th>Potential Value</th>
+												<th>Summary</th>
+												<th>Applicable Regulation</th>
+												<th>Regulation  Progress</th>
+												<th>Status</th>
 											</tr>
 										</thead>
 										<tbody>
 											<tr>
-												<td>
-													<div class="d-flex align-items-center">
-														<a href="#" class="d-block me-3">
-															<img src="../../../assets/images/image19.png" class="rounded-circle" width="36" height="36" alt="">
-														</a>
-														<div>
-															<a href="#" class="text-body fw-semibold">Elena Rodriguez</a>
-														</div>
-													</div>
-												</td>
 												<td><span class="badge text-black border rounded-pill">Content Generation</span></td>
 												<td><p class="mb-0">CorpWrite</p></td>
-												<td><h6 class="mb-0">www.corpwriteai.com</h6></td>
-												<td><span class="text-success"><i class="fa-solid fa-lg fa-circle-info"></i> Low</span></td>
-												<td><span class="text-danger"><i class="fa-solid fa-lg fa-triangle-exclamation"></i> 25%</span></td>
-												<td><span class="badge rounded-pill bg-warning bg-opacity-10 text-warning"><i class="fa-solid fa-dollar-sign"></i></span> <span class="badge rounded-pill bg-warning bg-opacity-10 text-warning"><i class="fa-solid fa-dollar-sign"></i></span></td>
+												<td class="text-wrap"><p class="mb-0" style="white-space: normal; width: 300px;">CorpWrite AI is a versatile content generation platform developed for internal document creation and external client communications.</p></td>
+												<td class="text-wrap"><p class="mb-0" style="white-space: normal; width: 300px;">EU AI Act: Governance and Risk Management for AI Systems</p></td>
+												<td style="display: flex;">
+													<span>
+													  <i class="fa-solid fa-lg fa-triangle-exclamation text-danger"></i> 3/9 <br>Action Needed
+													</span>
+													<a href="" class="rounded-pill btn btn-danger text-white ms-3">Take Action</a>
+												</td>
+												<td><span>Under Review</span></td>
 											</tr>
 											<tr>
-												<td>
-													<div class="d-flex align-items-center">
-														<a href="#" class="d-block me-3">
-															<img src="../../../assets/images/image22.png" class="rounded-circle" width="36" height="36" alt="">
-														</a>
-														<div>
-															<a href="#" class="text-body fw-semibold">Claire Johnson</a>
-														</div>
-													</div>
-												</td>
 												<td><span class="badge text-black border rounded-pill">Automated Grading</span></td>
 												<td><p class="mb-0">TalentAssess AI</p></td>
-												<td><h6 class="mb-0">www.talentassessai.com</h6></td>
-												<td><span class="text-success"><i class="fa-solid fa-lg fa-circle-info"></i> Low</span></td>
-												<td><span class="text-success"><i class="fa-solid fa-lg fa-circle-info"></i> 100%</span></td>
-												<td><span class="badge rounded-pill bg-warning bg-opacity-10 text-warning"><i class="fa-solid fa-dollar-sign"></i></span></td>
+												<td class="text-wrap"><p class="mb-0" style="white-space: normal; width: 300px;">TalentAssess AI, designed for the company's HR department, automates the evaluation of tests and assignments during recruitment processes.</p></td>
+												<td class="text-wrap"><p class="mb-0" style="white-space: normal; width: 300px;">NYC Local Law 144: Bias audits for automated employment</p></td>
+												<td style="display: flex;">
+													<span>
+													  <i class="fa-solid fa-lg fa-triangle-exclamation text-danger"></i> 5/8 <br>Action Needed
+													</span>
+													<a href="" class="rounded-pill btn btn-danger text-white ms-3">Take Action</a>
+												</td>
+												<td><span>Under Review</span></td>
 											</tr>
 											<tr>
-												<td>
-													<div class="d-flex align-items-center">
-														<a href="#" class="d-block me-3">
-															<img src="../../../assets/images/image19.png" class="rounded-circle" width="36" height="36" alt="">
-														</a>
-														<div>
-															<a href="#" class="text-body fw-semibold">Aarav Patel</a>
-														</div>
-													</div>
-												</td>
 												<td><span class="badge text-black border rounded-pill">Generative Images</span></td>
 												<td><p class="mb-0">MarketVisual AI</p></td>
-												<td><h6 class="mb-0">www.marketvisualai.com</h6></td>
-												<td><span class="text-primary"><i class="fa-solid fa-lg fa-circle-exclamation"></i> Medium</span></td>
-												<td><span class="text-danger"><i class="fa-solid fa-lg fa-triangle-exclamation"></i> 25%</span></td>
-												<td><span class="badge rounded-pill bg-warning bg-opacity-10 text-warning"><i class="fa-solid fa-dollar-sign"></i></span></td>
+												<td class="text-wrap"><p class="mb-0" style="white-space: normal; width: 300px;">MarketVisual AI caters to the marketing department for creating engaging visuals for campaigns and client presentations.</p></td>
+												<td class="text-wrap"><p class="mb-0" style="white-space: normal; width: 300px;">EU AI Act: Governance and Risk Management for AI Systems</p></td>
+												<td><span class="text-success">Fully Compliant</span></td>
+												<td><span>Deployed</span></td>
 											</tr>
 											<tr>
-												<td>
-													<div class="d-flex align-items-center">
-														<a href="#" class="d-block me-3">
-															<img src="../../../assets/images/image22.png" class="rounded-circle" width="36" height="36" alt="">
-														</a>
-														<div>
-															<a href="#" class="text-body fw-semibold">David Kim</a>
-														</div>
-													</div>
-												</td>
 												<td><span class="badge text-black border rounded-pill">Chatbot</span></td>
 												<td><p class="mb-0">HelpMate AI</p></td>
-												<td><h6 class="mb-0">www.helpmateai.com</h6></td>
-												<td><span class="text-danger"><i class="fa-solid fa-lg fa-triangle-exclamation"></i> High</span></td>
-												<td><span class="text-success"><i class="fa-solid fa-lg fa-circle-info"></i> 100%</span></td>
-												<td><span class="badge rounded-pill bg-warning bg-opacity-10 text-warning"><i class="fa-solid fa-dollar-sign"></i></span> <span class="badge rounded-pill bg-warning bg-opacity-10 text-warning"><i class="fa-solid fa-dollar-sign"></i></span> <span class="badge rounded-pill bg-warning bg-opacity-10 text-warning"><i class="fa-solid fa-dollar-sign"></i></span></td>
+												<td class="text-wrap"><p class="mb-0" style="white-space: normal; width: 300px;">HelpMate AI serves as an all-purpose chatbot for both customer support and internal employee queries.</p></td>
+												<td class="text-wrap"><p class="mb-0" style="white-space: normal; width: 300px;">EEOC technical assistance on ADA and AI</p></td>
+												<td style="display: flex;">
+													<span>
+													  <i class="fa-solid fa-lg fa-triangle-exclamation text-danger"></i> 5/7 <br>Action Needed
+													</span>
+													<a href="" class="rounded-pill btn btn-danger text-white ms-3">Take Action</a>
+												</td>
+												<td><span>Under Review</span></td>
 											</tr>
 											<tr>
-												<td>
-													<div class="d-flex align-items-center">
-														<a href="#" class="d-block me-3">
-															<img src="../../../assets/images/image19.png" class="rounded-circle" width="36" height="36" alt="">
-														</a>
-														<div>
-															<a href="#" class="text-body fw-semibold">Julia Ivanova</a>
-														</div>
-													</div>
-												</td>
 												<td><span class="badge text-black border rounded-pill">Facial Recognition</span></td>
 												<td><p class="mb-0">SecureEntry AI</p></td>
-												<td><h6 class="mb-0">www.secureentryai.com</h6></td>
-												<td><span class="text-success"><i class="fa-solid fa-lg fa-circle-info"></i> Low</span></td>
-												<td><span class="text-danger"><i class="fa-solid fa-lg fa-triangle-exclamation"></i> 25%</span></td>
-												<td><span class="badge rounded-pill bg-warning bg-opacity-10 text-warning"><i class="fa-solid fa-dollar-sign"></i></span> <span class="badge rounded-pill bg-warning bg-opacity-10 text-warning"><i class="fa-solid fa-dollar-sign"></i></span></td>
+												<td class="text-wrap"><p class="mb-0" style="white-space: normal; width: 300px;">SecureEntry AI is the company's facial recognition system for enhancing building security and streamlining employee access.</p></td>
+												<td class="text-wrap"><p class="mb-0" style="white-space: normal; width: 300px;">EU AI Act: Governance and Risk Management for AI Systems</p></td>
+												<td><span class="text-success">Fully Compliant</span></td>
+												<td><span>Deployed</span></td>
 											</tr>
 											<tr>
-												<td>
-													<div class="d-flex align-items-center">
-														<a href="#" class="d-block me-3">
-															<img src="../../../assets/images/image22.png" class="rounded-circle" width="36" height="36" alt="">
-														</a>
-														<div>
-															<a href="#" class="text-body fw-semibold">Marcus Wong</a>
-														</div>
-													</div>
-												</td>
 												<td><span class="badge text-black border rounded-pill">Image Classification</span></td>
 												<td><p class="mb-0">ImageSort AI</p></td>
-												<td><h6 class="mb-0">www.imagesortai.com</h6></td>
-												<td><span class="text-primary"><i class="fa-solid fa-lg fa-circle-exclamation"></i> Medium</span></td>
-												<td><span class="text-primary"><i class="fa-solid fa-lg fa-circle-info"></i> 70%</span></td>
-												<td><span class="badge rounded-pill bg-warning bg-opacity-10 text-warning"><i class="fa-solid fa-dollar-sign"></i></span></td>
-											</tr>
-											<tr>
-												<td>
-													<div class="d-flex align-items-center">
-														<a href="#" class="d-block me-3">
-															<img src="../../../assets/images/image19.png" class="rounded-circle" width="36" height="36" alt="">
-														</a>
-														<div>
-															<a href="#" class="text-body fw-semibold">Sofia García</a>
-														</div>
-													</div>
+												<td class="text-wrap"><p class="mb-0" style="white-space: normal; width: 300px;">ImageSort AI is an image classification tool used internally for organizing and analyzing large sets of company data and digital assets.</p></td>
+												<td class="text-wrap"><p class="mb-0" style="white-space: normal; width: 300px;">EU AI Act: Governance and Risk Management for AI Systems</p></td>
+												<td style="display: flex;">
+													<span>
+													  <i class="fa-solid fa-lg fa-triangle-exclamation text-danger"></i> 7/11 <br>Action Needed
+													</span>
+													<a href="" class="rounded-pill btn btn-danger text-white ms-3">Take Action</a>
 												</td>
-												<td><span class="badge text-black border rounded-pill">Sentiment Analysis</span></td>
-												<td><p class="mb-0">SentimentTrack AI</p></td>
-												<td><h6 class="mb-0">www.sentimenttrackai.com</h6></td>
-												<td><span class="text-danger"><i class="fa-solid fa-lg fa-triangle-exclamation"></i> High</span></td>
-												<td><span class="text-danger"><i class="fa-solid fa-lg fa-triangle-exclamation"></i> 25%</span></td>
-												<td><span class="badge rounded-pill bg-warning bg-opacity-10 text-warning"><i class="fa-solid fa-dollar-sign"></i></span> <span class="badge rounded-pill bg-warning bg-opacity-10 text-warning"><i class="fa-solid fa-dollar-sign"></i></span></td>
+												<td><span>Under Review</span></td>
 											</tr>
-											<tr>
-												<td>
-													<div class="d-flex align-items-center">
-														<a href="#" class="d-block me-3">
-															<img src="../../../assets/images/image22.png" class="rounded-circle" width="36" height="36" alt="">
-														</a>
-														<div>
-															<a href="#" class="text-body fw-semibold">Sven Eriksson</a>
-														</div>
-													</div>
-												</td>
-												<td><span class="badge text-black border rounded-pill">Algorithmic Trading</span></td>
-												<td><p class="mb-0">TradeOptim</p></td>
-												<td><h6 class="mb-0">www.tradeoptimai.com</h6></td>
-												<td><span class="text-danger"><i class="fa-solid fa-lg fa-triangle-exclamation"></i> High</span></td>
-												<td><span class="text-primary"><i class="fa-solid fa-lg fa-circle-info"></i> 70%</span></td>
-												<td><span class="badge rounded-pill bg-warning bg-opacity-10 text-warning"><i class="fa-solid fa-dollar-sign"></i></span> <span class="badge rounded-pill bg-warning bg-opacity-10 text-warning"><i class="fa-solid fa-dollar-sign"></i></span> <span class="badge rounded-pill bg-warning bg-opacity-10 text-warning"><i class="fa-solid fa-dollar-sign"></i></span></td>
-											</tr>
-											<tr>
-												<td>
-													<div class="d-flex align-items-center">
-														<a href="#" class="d-block me-3">
-															<img src="../../../assets/images/image19.png" class="rounded-circle" width="36" height="36" alt="">
-														</a>
-														<div>
-															<a href="#" class="text-body fw-semibold">Emilia Rossi</a>
-														</div>
-													</div>
-												</td>
-												<td><span class="badge text-black border rounded-pill">Chatbot</span></td>
-												<td><p class="mb-0">ProjectBuddy AI</p></td>
-												<td><h6 class="mb-0">www.projectbuddyai.com</h6></td>
-												<td><span class="text-primary"><i class="fa-solid fa-lg fa-circle-exclamation"></i> Medium</span></td>
-												<td><span class="text-success"><i class="fa-solid fa-lg fa-circle-info"></i> 100%</span></td>
-												<td><span class="badge rounded-pill bg-warning bg-opacity-10 text-warning"><i class="fa-solid fa-dollar-sign"></i></span> <span class="badge rounded-pill bg-warning bg-opacity-10 text-warning"><i class="fa-solid fa-dollar-sign"></i></span></td>
-											</tr>
-											<tr>
-												<td>
-													<div class="d-flex align-items-center">
-														<a href="#" class="d-block me-3">
-															<img src="../../../assets/images/image22.png" class="rounded-circle" width="36" height="36" alt="">
-														</a>
-														<div>
-															<a href="#" class="text-body fw-semibold">Maria Vásquez</a>
-														</div>
-													</div>
-												</td>
-												<td><span class="badge text-black border rounded-pill">Facial Recognition</span></td>
-												<td><p class="mb-0">FaceTrack Ai</p></td>
-												<td><h6 class="mb-0">www.facetrackai.com</h6></td>
-												<td><span class="text-success"><i class="fa-solid fa-lg fa-circle-info"></i> Low</span></td>
-												<td><span class="text-success"><i class="fa-solid fa-lg fa-circle-info"></i> 100%</span></td>
-												<td><span class="badge rounded-pill bg-warning bg-opacity-10 text-warning"><i class="fa-solid fa-dollar-sign"></i></span></td>
-											</tr>
+											
 										</tbody>
 									</table>
 								</div>
+													
 								<div class="offset-5">
                                     <ul class="pagination m-2">
                                         <li class="page-item disabled">
@@ -504,7 +596,7 @@
 
 
 				<!-- Footer -->
-				<div class="navbar navbar-sm navbar-footer border-top">
+				<!-- <div class="navbar navbar-sm navbar-footer border-top">
 					<div class="container-fluid">
 						<span>&copy; 2022 <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328">Limitless Web App Kit</a></span>
 
@@ -535,7 +627,7 @@
 							</li>
 						</ul>
 					</div>
-				</div>
+				</div> -->
 				<!-- /footer -->
 
 			</div>

@@ -60,13 +60,125 @@
 
 			<div class="navbar-brand flex-1 flex-lg-0">
 				<a href="index.html" class="d-inline-flex align-items-center">
-					<img src="../../../assets/images/logo_icon.svg" alt="">
-					<img src="../../../assets/images/logo_text_dark.svg" class="d-none d-sm-inline-block h-16px ms-3" alt="">
+					<img src="../../../assets/images/logo.png" alt="">
 				</a>
 			</div>
 
 			<ul class="nav flex-row justify-content-end order-1 order-lg-2">
+				<li class="nav-item nav-item-dropdown-lg dropdown ms-lg-2 mt-lg-2 me-lg-2">
+					<a href="#" class="navbar-nav-link navbar-nav-link-icon rounded-pill" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+						<i class="ph-chats"></i>
+						<span class="badge bg-yellow text-black position-absolute top-0 end-0 translate-middle-top zindex-1 rounded-pill mt-1 me-1">8</span>
+					</a>
 
+					<div class="dropdown-menu wmin-lg-300 p-0">
+						<div class="d-flex align-items-center p-3">
+							<h6 class="mb-0">Messages</h6>
+							<div class="ms-auto">
+								<a href="#" class="text-body">
+									<i class="ph-plus-circle"></i>
+								</a>
+								<a href="#search_messages" class="collapsed text-body ms-2" data-bs-toggle="collapse">
+									<i class="ph-magnifying-glass"></i>
+								</a>
+							</div>
+						</div>
+
+						<div class="collapse" id="search_messages">
+							<div class="px-3 mb-2">
+								<div class="form-control-feedback form-control-feedback-start">
+									<input type="text" class="form-control" placeholder="Search messages">
+									<div class="form-control-feedback-icon">
+										<i class="ph-magnifying-glass"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="dropdown-menu-scrollable pb-2">
+							<a href="#" class="dropdown-item align-items-start text-wrap py-2">
+								<div class="status-indicator-container me-3">
+									<img src="../../../assets/images/demo/users/face10.jpg" class="w-40px h-40px rounded-pill" alt="">
+									<span class="status-indicator bg-warning"></span>
+								</div>
+
+								<div class="flex-1">
+									<span class="fw-semibold">James Alexander</span>
+									<span class="text-muted float-end fs-sm">04:58</span>
+									<div class="text-muted">who knows, maybe that would be the best thing for me...</div>
+								</div>
+							</a>
+
+							<a href="#" class="dropdown-item align-items-start text-wrap py-2">
+								<div class="status-indicator-container me-3">
+									<img src="../../../assets/images/demo/users/face3.jpg" class="w-40px h-40px rounded-pill" alt="">
+									<span class="status-indicator bg-success"></span>
+								</div>
+
+								<div class="flex-1">
+									<span class="fw-semibold">Margo Baker</span>
+									<span class="text-muted float-end fs-sm">12:16</span>
+									<div class="text-muted">That was something he was unable to do because...</div>
+								</div>
+							</a>
+
+							<a href="#" class="dropdown-item align-items-start text-wrap py-2">
+								<div class="status-indicator-container me-3">
+									<img src="../../../assets/images/demo/users/face24.jpg" class="w-40px h-40px rounded-pill" alt="">
+									<span class="status-indicator bg-success"></span>
+								</div>
+								<div class="flex-1">
+									<span class="fw-semibold">Jeremy Victorino</span>
+									<span class="text-muted float-end fs-sm">22:48</span>
+									<div class="text-muted">But that would be extremely strained and suspicious...</div>
+								</div>
+							</a>
+
+							<a href="#" class="dropdown-item align-items-start text-wrap py-2">
+								<div class="status-indicator-container me-3">
+									<img src="../../../assets/images/demo/users/face4.jpg" class="w-40px h-40px rounded-pill" alt="">
+									<span class="status-indicator bg-grey"></span>
+								</div>
+								<div class="flex-1">
+									<span class="fw-semibold">Beatrix Diaz</span>
+									<span class="text-muted float-end fs-sm">Tue</span>
+									<div class="text-muted">What a strenuous career it is that I've chosen...</div>
+								</div>
+							</a>
+
+							<a href="#" class="dropdown-item align-items-start text-wrap py-2">
+								<div class="status-indicator-container me-3">
+									<img src="../../../assets/images/demo/users/face25.jpg" class="w-40px h-40px rounded-pill" alt="">
+									<span class="status-indicator bg-danger"></span>
+								</div>
+								<div class="flex-1">
+									<span class="fw-semibold">Richard Vango</span>
+									<span class="text-muted float-end fs-sm">Mon</span>
+									<div class="text-muted">Other travelling salesmen live a life of luxury...</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="d-flex border-top py-2 px-3">
+							<a href="#" class="text-body">
+								<i class="ph-checks me-1"></i>
+								Dismiss all
+							</a>
+							<a href="#" class="text-body ms-auto">
+								View all
+								<i class="ph-arrow-circle-right ms-1"></i>
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li class="nav-item ms-lg-2 mt-lg-2 me-lg-2">
+					<a href="#" class="navbar-nav-link navbar-nav-link-icon rounded-pill" data-bs-toggle="offcanvas" data-bs-target="#notifications">
+						<i class="ph-bell"></i>
+						<span class="badge bg-yellow text-black position-absolute top-0 end-0 translate-middle-top zindex-1 rounded-pill mt-1 me-1">2</span>
+					</a>
+				</li>
+				
 				<li class="nav-item nav-item-dropdown-lg dropdown ms-lg-2">
 					<a href="#" class="navbar-nav-link align-items-center rounded-pill p-1" data-bs-toggle="dropdown">
 						<div class="status-indicator-container">
@@ -77,6 +189,20 @@
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-end">
+						<a href="#" class="dropdown-item">
+							<i class="ph-user-circle me-2"></i>
+							My profile
+						</a>
+						<a href="#" class="dropdown-item">
+							<i class="ph-envelope-open me-2"></i>
+							My inbox
+							<span class="badge bg-primary rounded-pill ms-auto">26</span>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="dropdown-item">
+							<i class="ph-gear me-2"></i>
+							Account settings
+						</a>
 						<a href="#" class="dropdown-item">
 							<i class="ph-sign-out me-2"></i>
 							Logout
@@ -157,8 +283,8 @@
 			<div class="content-inner">
 
 				<!-- Page header -->
-				<!-- <div class="page-header page-header-light shadow">
-					<div class="page-header-content d-lg-flex">
+				<div class="page-header page-header-light shadow">
+					<!-- <div class="page-header-content d-lg-flex">
 						<div class="d-flex">
 							<h4 class="page-title mb-0">
 								Home - <span class="fw-normal">Dashboard</span>
@@ -247,14 +373,14 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
 
 					<div class="page-header-content d-lg-flex border-top">
 						<div class="d-flex">
 							<div class="breadcrumb py-2">
 								<a href="index.html" class="breadcrumb-item"><i class="ph-house"></i></a>
 								<a href="#" class="breadcrumb-item">Home</a>
-								<span class="breadcrumb-item active">Dashboard</span>
+								<span class="breadcrumb-item active">Submit Application</span>
 							</div>
 
 							<a href="#breadcrumb_elements" class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto" data-bs-toggle="collapse">
@@ -298,7 +424,7 @@
 							</div>
 						</div>
 					</div>
-				</div> -->
+				</div>
 				<!-- /page header -->
 
 
@@ -314,7 +440,7 @@
 					<div class="row">
 						<div class="col-12">
 							<h2 class="mb-3">Submit an AI Application for review</h2>
-							<p>Follow the steps to submit a new AI Application to be aprooved. Complete the information requested.</p>
+							<p>Follow these steps to submit a new AI application for approval. Please provide all the requested information.</p>
 						</div>
 						<div class="col-12">
 
@@ -329,14 +455,14 @@
                                             <div class="col-lg-8">
                                                 <div class="mb-3">
                                                     <label class="form-label">Application Name</label>
-                                                    <input type="text" name="name" class="form-control" placeholder="Max Characters 40">
+                                                    <input type="text" name="name" class="form-control" placeholder="TalentAssess AI">
                                                 </div>
                                             </div>
         
                                             <div class="col-lg-8">
                                                 <div class="mb-3">
                                                     <label class="form-label">Summary</label>
-                                                    <textarea type="textarea" name="Summary" class="form-control" placeholder="Max Characters 300" rows="4"></textarea>
+                                                    <textarea type="textarea" name="Summary" class="form-control" placeholder="TalentAssess AI, designed for the company's HR department, automates the evaluation of tests and assignments during recruitment processes." rows="4"></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -377,29 +503,20 @@
                                             <div class="col-lg-8">
                                                 <div class="mb-3">
                                                     <label class="form-label">Use Case</label>
-                                                    <textarea type="text" name="degree-level" placeholder="Max Characters 300." class="form-control" rows="4"></textarea>
+                                                    <textarea type="text" name="degree-level" placeholder="TalentAssess AI is an innovative solution tailored for HR departments, revolutionizing the recruitment process by automating the assessment of tests and assignments. TalentAssess AI can benefit a company by streamlining and enhancing its HR recruitment procedures." class="form-control" rows="4"></textarea>
                                                 </div>
                                             </div>
                                         </div>
                                     </fieldset>
         
-                                    <h6>3: Data</h6>
+                                    <h6>3: Code</h6>
                                     <fieldset>
                                         <div class="row">
                                             <h3>AI Application, step 3</h3>
                                             <div class="col-lg-6">
                                                 <div class="mb-3">
-                                                    <label class="form-label">Data Repository URL</label>
+                                                    <label class="form-label">Code Repository URL</label>
                                                     <input type="text" name="experience-company" placeholder="Paste URL here, eg GITHUB" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Upload data</label>
-                                                    <input type="file" class="form-control">
-                                                    <span class="form-text text-muted">Accepted formats: .csv</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -430,8 +547,7 @@
                                     <div class="row d-none m-3" id="form-submitted">
                                         <div class="col-lg-6">
                                             <h5>Application submitted</h5>
-                                            <p>Your application has been submitted for approval. 
-                                                Check your list of applications to see the status of your pending approvals.</p>
+                                            <p>Your application has been successfully submitted for approval. Please check your list of applications to monitor the status of your pending approvals.</p>
                                             <a href="" class="btn btn-primary">Go to my applications</a>
                                         </div>
                                     </div>
@@ -450,7 +566,7 @@
 
 
 				<!-- Footer -->
-				<div class="navbar navbar-sm navbar-footer border-top">
+				<!-- <div class="navbar navbar-sm navbar-footer border-top">
 					<div class="container-fluid">
 						<span>&copy; 2022 <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328">Limitless Web App Kit</a></span>
 
@@ -481,7 +597,7 @@
 							</li>
 						</ul>
 					</div>
-				</div>
+				</div> -->
 				<!-- /footer -->
 
 			</div>

@@ -62,13 +62,125 @@
 
 			<div class="navbar-brand flex-1 flex-lg-0">
 				<a href="index.html" class="d-inline-flex align-items-center">
-					<img src="../../../assets/images/logo_icon.svg" alt="">
-					<img src="../../../assets/images/logo_text_dark.svg" class="d-none d-sm-inline-block h-16px ms-3" alt="">
+					<img src="../../../assets/images/logo.png" alt="">
 				</a>
 			</div>
 
 			<ul class="nav flex-row justify-content-end order-1 order-lg-2">
+				<li class="nav-item nav-item-dropdown-lg dropdown ms-lg-2 mt-lg-2 me-lg-2">
+					<a href="#" class="navbar-nav-link navbar-nav-link-icon rounded-pill" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+						<i class="ph-chats"></i>
+						<span class="badge bg-yellow text-black position-absolute top-0 end-0 translate-middle-top zindex-1 rounded-pill mt-1 me-1">8</span>
+					</a>
 
+					<div class="dropdown-menu wmin-lg-300 p-0">
+						<div class="d-flex align-items-center p-3">
+							<h6 class="mb-0">Messages</h6>
+							<div class="ms-auto">
+								<a href="#" class="text-body">
+									<i class="ph-plus-circle"></i>
+								</a>
+								<a href="#search_messages" class="collapsed text-body ms-2" data-bs-toggle="collapse">
+									<i class="ph-magnifying-glass"></i>
+								</a>
+							</div>
+						</div>
+
+						<div class="collapse" id="search_messages">
+							<div class="px-3 mb-2">
+								<div class="form-control-feedback form-control-feedback-start">
+									<input type="text" class="form-control" placeholder="Search messages">
+									<div class="form-control-feedback-icon">
+										<i class="ph-magnifying-glass"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="dropdown-menu-scrollable pb-2">
+							<a href="#" class="dropdown-item align-items-start text-wrap py-2">
+								<div class="status-indicator-container me-3">
+									<img src="../../../assets/images/demo/users/face10.jpg" class="w-40px h-40px rounded-pill" alt="">
+									<span class="status-indicator bg-warning"></span>
+								</div>
+
+								<div class="flex-1">
+									<span class="fw-semibold">James Alexander</span>
+									<span class="text-muted float-end fs-sm">04:58</span>
+									<div class="text-muted">who knows, maybe that would be the best thing for me...</div>
+								</div>
+							</a>
+
+							<a href="#" class="dropdown-item align-items-start text-wrap py-2">
+								<div class="status-indicator-container me-3">
+									<img src="../../../assets/images/demo/users/face3.jpg" class="w-40px h-40px rounded-pill" alt="">
+									<span class="status-indicator bg-success"></span>
+								</div>
+
+								<div class="flex-1">
+									<span class="fw-semibold">Margo Baker</span>
+									<span class="text-muted float-end fs-sm">12:16</span>
+									<div class="text-muted">That was something he was unable to do because...</div>
+								</div>
+							</a>
+
+							<a href="#" class="dropdown-item align-items-start text-wrap py-2">
+								<div class="status-indicator-container me-3">
+									<img src="../../../assets/images/demo/users/face24.jpg" class="w-40px h-40px rounded-pill" alt="">
+									<span class="status-indicator bg-success"></span>
+								</div>
+								<div class="flex-1">
+									<span class="fw-semibold">Jeremy Victorino</span>
+									<span class="text-muted float-end fs-sm">22:48</span>
+									<div class="text-muted">But that would be extremely strained and suspicious...</div>
+								</div>
+							</a>
+
+							<a href="#" class="dropdown-item align-items-start text-wrap py-2">
+								<div class="status-indicator-container me-3">
+									<img src="../../../assets/images/demo/users/face4.jpg" class="w-40px h-40px rounded-pill" alt="">
+									<span class="status-indicator bg-grey"></span>
+								</div>
+								<div class="flex-1">
+									<span class="fw-semibold">Beatrix Diaz</span>
+									<span class="text-muted float-end fs-sm">Tue</span>
+									<div class="text-muted">What a strenuous career it is that I've chosen...</div>
+								</div>
+							</a>
+
+							<a href="#" class="dropdown-item align-items-start text-wrap py-2">
+								<div class="status-indicator-container me-3">
+									<img src="../../../assets/images/demo/users/face25.jpg" class="w-40px h-40px rounded-pill" alt="">
+									<span class="status-indicator bg-danger"></span>
+								</div>
+								<div class="flex-1">
+									<span class="fw-semibold">Richard Vango</span>
+									<span class="text-muted float-end fs-sm">Mon</span>
+									<div class="text-muted">Other travelling salesmen live a life of luxury...</div>
+								</div>
+							</a>
+						</div>
+
+						<div class="d-flex border-top py-2 px-3">
+							<a href="#" class="text-body">
+								<i class="ph-checks me-1"></i>
+								Dismiss all
+							</a>
+							<a href="#" class="text-body ms-auto">
+								View all
+								<i class="ph-arrow-circle-right ms-1"></i>
+							</a>
+						</div>
+					</div>
+				</li>
+
+				<li class="nav-item ms-lg-2 mt-lg-2 me-lg-2">
+					<a href="#" class="navbar-nav-link navbar-nav-link-icon rounded-pill" data-bs-toggle="offcanvas" data-bs-target="#notifications">
+						<i class="ph-bell"></i>
+						<span class="badge bg-yellow text-black position-absolute top-0 end-0 translate-middle-top zindex-1 rounded-pill mt-1 me-1">2</span>
+					</a>
+				</li>
+				
 				<li class="nav-item nav-item-dropdown-lg dropdown ms-lg-2">
 					<a href="#" class="navbar-nav-link align-items-center rounded-pill p-1" data-bs-toggle="dropdown">
 						<div class="status-indicator-container">
@@ -79,6 +191,20 @@
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-end">
+						<a href="#" class="dropdown-item">
+							<i class="ph-user-circle me-2"></i>
+							My profile
+						</a>
+						<a href="#" class="dropdown-item">
+							<i class="ph-envelope-open me-2"></i>
+							My inbox
+							<span class="badge bg-primary rounded-pill ms-auto">26</span>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="dropdown-item">
+							<i class="ph-gear me-2"></i>
+							Account settings
+						</a>
 						<a href="#" class="dropdown-item">
 							<i class="ph-sign-out me-2"></i>
 							Logout
@@ -146,7 +272,6 @@
 								<span>Policy Compliance</span>
 							</a>
 							<ul class="nav-group-sub collapse">
-								<li class="nav-item"><a href="manager_policy_summary.html" class="nav-link">Overview</a></li>
 								<li class="nav-item"><a href="manager_policy_compliance.html" class="nav-link">Compliance Review</a></li>
 								<li class="nav-item"><a href="manager_policy_violation.html" class="nav-link">Violations Log</a></li>
 							</ul>
@@ -168,12 +293,6 @@
 								<span>
 									Risks Visualizer
 								</span>
-							</a>
-						</li>
-						<li class="nav-item">
-							<a href="manager_report_module.html" class="nav-link">
-								<i class="fa-solid fa-file"></i>
-								<span>Report Module</span>
 							</a>
 						</li>
 						<li class="nav-item nav-item-submenu">
@@ -206,6 +325,151 @@
 			<!-- Inner content -->
 			<div class="content-inner">
 
+				<!-- Page header -->
+				<div class="page-header page-header-light shadow">
+					<!-- <div class="page-header-content d-lg-flex">
+						<div class="d-flex">
+							<h4 class="page-title mb-0">
+								Home - <span class="fw-normal">Dashboard</span>
+							</h4>
+
+							<a href="#page_header" class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto" data-bs-toggle="collapse">
+								<i class="ph-caret-down collapsible-indicator ph-sm m-1"></i>
+							</a>
+						</div>
+
+						<div class="collapse d-lg-block my-lg-auto ms-lg-auto" id="page_header">
+							<div class="d-sm-flex align-items-center mb-3 mb-lg-0 ms-lg-3">
+								<div class="dropdown w-100 w-sm-auto">
+									<a href="#" class="d-flex align-items-center text-body lh-1 dropdown-toggle py-sm-2" data-bs-toggle="dropdown" data-bs-display="static">
+										<img src="../../../assets/images/brands/tesla.svg" class="w-32px h-32px me-2" alt="">
+										<div class="me-auto me-lg-1">
+											<div class="fs-sm text-muted mb-1">Customer</div>
+											<div class="fw-semibold">Tesla Motors Inc</div>
+										</div>
+									</a>
+
+									<div class="dropdown-menu dropdown-menu-lg-end w-100 w-lg-auto wmin-300 wmin-sm-350 pt-0">
+										<div class="d-flex align-items-center p-3">
+											<h6 class="fw-semibold mb-0">Customers</h6>
+											<a href="#" class="ms-auto">
+												View all
+												<i class="ph-arrow-circle-right ms-1"></i>
+											</a>
+										</div>
+										<a href="#" class="dropdown-item active py-2">
+											<img src="../../../assets/images/brands/tesla.svg" class="w-32px h-32px me-2" alt="">
+											<div>
+												<div class="fw-semibold">Tesla Motors Inc</div>
+												<div class="fs-sm text-muted">42 users</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item py-2">
+											<img src="../../../assets/images/brands/debijenkorf.svg" class="w-32px h-32px me-2" alt="">
+											<div>
+												<div class="fw-semibold">De Bijenkorf</div>
+												<div class="fs-sm text-muted">49 users</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item py-2">
+											<img src="../../../assets/images/brands/klm.svg" class="w-32px h-32px me-2" alt="">
+											<div>
+												<div class="fw-semibold">Royal Dutch Airlines</div>
+												<div class="fs-sm text-muted">18 users</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item py-2">
+											<img src="../../../assets/images/brands/shell.svg" class="w-32px h-32px me-2" alt="">
+											<div>
+												<div class="fw-semibold">Royal Dutch Shell</div>
+												<div class="fs-sm text-muted">54 users</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item py-2">
+											<img src="../../../assets/images/brands/bp.svg" class="w-32px h-32px me-2" alt="">
+											<div>
+												<div class="fw-semibold">BP plc</div>
+												<div class="fs-sm text-muted">23 users</div>
+											</div>
+										</a>
+									</div>
+								</div>
+
+								<div class="vr d-none d-sm-block flex-shrink-0 my-2 mx-3"></div>
+
+								<div class="d-inline-flex mt-3 mt-sm-0">
+									<a href="#" class="status-indicator-container ms-1">
+										<img src="../../../assets/images/demo/users/face24.jpg" class="w-32px h-32px rounded-pill" alt="">
+										<span class="status-indicator bg-warning"></span>
+									</a>
+									<a href="#" class="status-indicator-container ms-1">
+										<img src="../../../assets/images/demo/users/face1.jpg" class="w-32px h-32px rounded-pill" alt="">
+										<span class="status-indicator bg-success"></span>
+									</a>
+									<a href="#" class="status-indicator-container ms-1">
+										<img src="../../../assets/images/demo/users/face3.jpg" class="w-32px h-32px rounded-pill" alt="">
+										<span class="status-indicator bg-danger"></span>
+									</a>
+									<a href="#" class="btn btn-outline-primary btn-icon w-32px h-32px rounded-pill ms-3">
+										<i class="ph-plus"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div> -->
+
+					<div class="page-header-content d-lg-flex border-top">
+						<div class="d-flex">
+							<div class="breadcrumb py-2">
+								<a href="index.html" class="breadcrumb-item"><i class="ph-house"></i></a>
+								<a href="#" class="breadcrumb-item">Home</a>
+								<span class="breadcrumb-item active">Internal Policies</span>
+							</div>
+
+							<a href="#breadcrumb_elements" class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto" data-bs-toggle="collapse">
+								<i class="ph-caret-down collapsible-indicator ph-sm m-1"></i>
+							</a>
+						</div>
+
+						<div class="collapse d-lg-block ms-lg-auto" id="breadcrumb_elements">
+							<div class="d-lg-flex mb-2 mb-lg-0">
+								<a href="#" class="d-flex align-items-center text-body py-2">
+									<i class="ph-lifebuoy me-2"></i>
+									Support
+								</a>
+
+								<div class="dropdown ms-lg-3">
+									<a href="#" class="d-flex align-items-center text-body dropdown-toggle py-2" data-bs-toggle="dropdown">
+										<i class="ph-gear me-2"></i>
+										<span class="flex-1">Settings</span>
+									</a>
+
+									<div class="dropdown-menu dropdown-menu-end w-100 w-lg-auto">
+										<a href="#" class="dropdown-item">
+											<i class="ph-shield-warning me-2"></i>
+											Account security
+										</a>
+										<a href="#" class="dropdown-item">
+											<i class="ph-chart-bar me-2"></i>
+											Analytics
+										</a>
+										<a href="#" class="dropdown-item">
+											<i class="ph-lock-key me-2"></i>
+											Privacy
+										</a>
+										<div class="dropdown-divider"></div>
+										<a href="#" class="dropdown-item">
+											<i class="ph-gear me-2"></i>
+											All settings
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /page header -->
+
 
 				<!-- Content area -->
 				<div class="content">
@@ -219,72 +483,17 @@
 					<div class="row">
 						<div class="col-12">
 							<h2 class="mb-3">Internal Policies</h2>
-							<p>Review existing internal policies. Here you can edit and delete existing policies.</p>
+							<p>Review existing internal policies. Here, you can edit and delete any existing policies as needed.</p>
 						</div>
 						<div class="col-12">
 
 							<!-- Marketing campaigns -->
 							<div class="card data-card">
-								<div class="card-header d-flex align-items-center">
-									<h5 class="mb-0">Filters</h5>
-								</div>
-
-								<div class="card-body d-sm-flex align-items-sm-center justify-content-left flex-sm-wrap">
-
-                                    <div class="d-flex align-items-center mb-3 mb-sm-0 ms-3">
-										<!-- <div id="campaign-status-pie"></div> -->
-	                                    <div class="ms-3">
-                                            <div class="d-flex align-items-center">
-                                                <h6 class="mb-0">Date Added</h6>
-                                            </div>
-                                            <div class="input-group input-group-sm datepicker-range" style="width: 150px;">
-                                                <input type="text" class="form-control" placeholder="From">
-                                                <input type="text" class="form-control" placeholder="To">
-                                            </div>
-                                        </div>
-									</div>
-
-                                    <div class="d-flex align-items-center mb-3 mb-sm-0 ms-3">
-										<!-- <div id="campaign-status-pie"></div> -->
-	                                    <div class="ms-3">
-                                            <div class="d-flex align-items-center">
-                                                <h6 class="mb-0">Last Modified</h6>
-                                            </div>
-                                            <div class="input-group input-group-sm datepicker-range2" style="width: 150px;">
-                                                <input type="text" class="form-control" placeholder="From">
-                                                <input type="text" class="form-control" placeholder="To">
-                                            </div>
-                                        </div>
-									</div>
-
-                                    <div class="d-flex align-items-center mb-3 mb-sm-0">
-										<!-- <div id="campaign-status-pie"></div> -->
-										<div class="ms-3">
-											<div class="d-flex align-items-center">
-												<h6 class="mb-0">Users</h6>
-											</div>
-											<select class="form-select form-select-sm w-auto flex-grow-0">
-												<option value="1" selected>Select From the List</option>
-												<option value="Elena Rodriguez">Elena Rodriguez</option>
-												<option value="Claire Johnson">Claire Johnson</option>
-												<option value="Aarav Patel">Aarav Patel</option>
-												<option value="David Kim">David Kim</option>
-												<option value="Julia Ivanova">Julia Ivanova</option>
-												<option value="Marcus Wong">Marcus Wong</option>
-												<option value="Sofia García">Sofia García</option>
-												<option value="Sven Eriksson">Sven Eriksson</option>
-												<option value="Emilia Rossi">Emilia Rossi</option>
-												<option value="Maria Vásquez">Maria Vásquez</option>
-											</select>
-										</div>
-									</div>
-								</div>
 
 								<div class="table-responsive">
 									<table class="table text-nowrap">
 										<thead>
 											<tr>
-												<th>Users</th>
 												<th>Name</th>
 												<th>Summary</th>
 												<th>Date Added</th>
@@ -294,103 +503,51 @@
 										</thead>
 										<tbody>
 											<tr>
-												<td>
-													<div class="d-flex align-items-center">
-														<a href="#" class="d-block me-3">
-															<img src="../../../assets/images/image19.png" class="rounded-circle" width="36" height="36" alt="">
-														</a>
-														<!-- <div>
-															<a href="#" class="text-body fw-semibold">Facebook</a>
-															<div class="text-muted fs-sm">
-																<span class="d-inline-block bg-primary rounded-pill p-1 me-1"></span>
-																02:00 - 03:00
-															</div>
-														</div> -->
-													</div>
-												</td>
+
 												<td><p class="mb-0 text-wrap">Salary Confidentiality Clause</p></td>
 												<td class="text-wrap"><p class="mb-0">Employees are prohibited from disclosing their own or others' salary details using any AI application or tool</p></td>
 												<td><p class="mb-0">23/4/2023</p></td>
 												<td><p class="mb-0">23/4/2023</p></td>
 												<td>
-													<a href="" class="badge rounded-pill bg-primary text-white">View</a>
-													<a href="" class="badge rounded-pill bg-warning text-white">Edit</a>
-													<a href="" class="badge rounded-pill bg-danger text-white">Deny</a>
+													<a href="" class="rounded-pill btn btn-primary text-white">View</a>
+													<a href="" class="rounded-pill btn btn-warning text-white">Edit</a>
+													<a href="" class="rounded-pill btn btn-danger text-white">Delete</a>
 												</td>
 											</tr>
 											<tr>
-												<td>
-													<div class="d-flex align-items-center">
-														<a href="#" class="d-block me-3">
-															<img src="../../../assets/images/image19.png" class="rounded-circle" width="36" height="36" alt="">
-														</a>
-														<!-- <div>
-															<a href="#" class="text-body fw-semibold">Facebook</a>
-															<div class="text-muted fs-sm">
-																<span class="d-inline-block bg-primary rounded-pill p-1 me-1"></span>
-																02:00 - 03:00
-															</div>
-														</div> -->
-													</div>
-												</td>
+
 												<td><p class="mb-0 text-wrap">Non-Discrimination Clause</p></td>
 												<td class="text-wrap"><p class="mb-0">Use of discriminatory language or content in any AI-enabled communication or platform is strictly prohibited.</p></td>
 												<td><p class="mb-0">23/4/2023</p></td>
 												<td><p class="mb-0">23/4/2023</p></td>
 												<td>
-													<a href="" class="badge rounded-pill bg-primary text-white">View</a>
-													<a href="" class="badge rounded-pill bg-warning text-white">Edit</a>
-													<a href="" class="badge rounded-pill bg-danger text-white">Deny</a>
+													<a href="" class="rounded-pill btn btn-primary text-white">View</a>
+													<a href="" class="rounded-pill btn btn-warning text-white">Edit</a>
+													<a href="" class="rounded-pill btn btn-danger text-white">Delete</a>
 												</td>
 											</tr>
 											<tr>
-												<td>
-													<div class="d-flex align-items-center">
-														<a href="#" class="d-block me-3">
-															<img src="../../../assets/images/image19.png" class="rounded-circle" width="36" height="36" alt="">
-														</a>
-														<!-- <div>
-															<a href="#" class="text-body fw-semibold">Facebook</a>
-															<div class="text-muted fs-sm">
-																<span class="d-inline-block bg-primary rounded-pill p-1 me-1"></span>
-																02:00 - 03:00
-															</div>
-														</div> -->
-													</div>
-												</td>
+
 												<td><p class="mb-0 text-wrap">Social Security Number Privacy Clause</p></td>
 												<td class="text-wrap"><p class="mb-0">It is strictly forbidden to disclose or input Social Security numbers into any AI-enabled systems, applications, or tools within the organization</p></td>
 												<td><p class="mb-0">23/4/2023</p></td>
 												<td><p class="mb-0">23/4/2023</p></td>
 												<td>
-													<a href="" class="badge rounded-pill bg-primary text-white">View</a>
-													<a href="" class="badge rounded-pill bg-warning text-white">Edit</a>
-													<a href="" class="badge rounded-pill bg-danger text-white">Deny</a>
+													<a href="" class="rounded-pill btn btn-primary text-white">View</a>
+													<a href="" class="rounded-pill btn btn-warning text-white">Edit</a>
+													<a href="" class="rounded-pill btn btn-danger text-white">Delete</a>
 												</td>
 											</tr>
 											<tr>
-												<td>
-													<div class="d-flex align-items-center">
-														<a href="#" class="d-block me-3">
-															<img src="../../../assets/images/image19.png" class="rounded-circle" width="36" height="36" alt="">
-														</a>
-														<!-- <div>
-															<a href="#" class="text-body fw-semibold">Facebook</a>
-															<div class="text-muted fs-sm">
-																<span class="d-inline-block bg-primary rounded-pill p-1 me-1"></span>
-																02:00 - 03:00
-															</div>
-														</div> -->
-													</div>
-												</td>
+
 												<td><p class="mb-0 text-wrap">Provider Information Non-Disclosure Clause</p></td>
 												<td class="text-wrap"><p class="mb-0">Revealing names or details of the company's service providers or partners through AI-enabled tools or communications is strictly prohibited.</p></td>
 												<td><p class="mb-0">23/4/2023</p></td>
 												<td><p class="mb-0">23/4/2023</p></td>
 												<td>
-													<a href="" class="badge rounded-pill bg-primary text-white">View</a>
-													<a href="" class="badge rounded-pill bg-warning text-white">Edit</a>
-													<a href="" class="badge rounded-pill bg-danger text-white">Deny</a>
+													<a href="" class="rounded-pill btn btn-primary text-white">View</a>
+													<a href="" class="rounded-pill btn btn-warning text-white">Edit</a>
+													<a href="" class="rounded-pill btn btn-danger text-white">Delete</a>
 												</td>
 											</tr>
 										</tbody>
@@ -431,7 +588,7 @@
 
 
 				<!-- Footer -->
-				<div class="navbar navbar-sm navbar-footer border-top">
+				<!-- <div class="navbar navbar-sm navbar-footer border-top">
 					<div class="container-fluid">
 						<span>&copy; 2022 <a href="https://themeforest.net/item/limitless-responsive-web-application-kit/13080328">Limitless Web App Kit</a></span>
 
@@ -462,7 +619,7 @@
 							</li>
 						</ul>
 					</div>
-				</div>
+				</div> -->
 				<!-- /footer -->
 
 			</div>
