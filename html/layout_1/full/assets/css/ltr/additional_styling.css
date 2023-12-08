@@ -85,3 +85,7 @@
 .checkbox-dropdown.active .checkbox-dropdown-content {
     display: block;
 }
+
+.shortcuts .card{
+    padding: 0px;
+}

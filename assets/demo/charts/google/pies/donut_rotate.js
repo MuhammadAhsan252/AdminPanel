@@ -70,11 +70,11 @@ var GoogleDonutRotated = function() {
             // Data
             var data = google.visualization.arrayToDataTable([
                 ['Task', 'Hours per Day'],
-                ['Work',     11],
-                ['Eat',      2],
-                ['Commute',  2],
-                ['Watch TV', 2],
-                ['Sleep',    7]
+                ['OpenAI',     11],
+                ['Anthropic',      2],
+                ['IBM Watson',  2],
+                ['Nvidia AI', 2],
+                ['Google Deepmind',    7]
             ]);
 
             // Options

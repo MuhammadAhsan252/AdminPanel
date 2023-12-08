@@ -255,7 +255,7 @@ var DashboardBars = function() {
     return {
         init: function() {
             _BarChart('#hours-available-bars', 24, 40, true, 'elastic', 1200, 50, '#EC407A', 'hours');
-            _BarChart('#goal-bars', 24, 40, true, 'elastic', 1200, 50, '#5C6BC0', 'goal');
+            _BarChart('#goal-bars', 24, 40, true, 'elastic', 1200, 50, '#4cb6ac', 'goal');
             _BarChart('#members-online', 24, 50, true, 'elastic', 1200, 50, 'rgba(255,255,255,0.5)', 'members');
         }
     }

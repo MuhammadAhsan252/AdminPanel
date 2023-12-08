@@ -162,8 +162,8 @@ var DashboardProgress = function() {
 
     return {
         init: function() {
-            _ProgressRoundedChart('#hours-available-progress', 38, 2, '#F06292', 0.68, 'ph-check text-pink', 'Hours available', '64% average');
-            _ProgressRoundedChart('#goal-progress', 38, 2, '#5C6BC0', 0.82, 'ph-trophy text-indigo', 'Productivity goal', '87% average');
+            _ProgressRoundedChart('#hours-available-progress', 38, 2, '#4cb6ac', 0.74, 'ph-check text-success', 'Total API Pass Rate');
+            _ProgressRoundedChart('#goal-progress', 38, 2, '#F06292', 0.26, 'ph-x text-danger', 'Total API Deny Rate');
         }
     }
 }();

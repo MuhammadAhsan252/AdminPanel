@@ -10,7 +10,7 @@
 	<link href="../../../assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
 	<link href="../../../assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/ltr/all.min.css" id="stylesheet" rel="stylesheet" type="text/css">
-    <link href="assets/css/ltr/bootstrap.css" id="stylesheet" rel="stylesheet" type="text/css">
+    <link href="assets/css/ltr/additional_styling.css" id="stylesheet" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 	<!-- /global stylesheets -->
 
@@ -35,16 +35,9 @@
 	<script src="../../../assets/demo/charts/pages/dashboard/heatmaps.js"></script>
 	<script src="../../../assets/demo/charts/pages/dashboard/pies.js"></script>
 	<script src="../../../assets/demo/charts/pages/dashboard/bullets.js"></script>
+    <script src="../../../assets/demo/pages/widgets_stats2.js"></script>
 	<!-- /theme JS files -->
 
-    <!-- Theme JS files -->
-	<script src="../../../assets/js/jquery/jquery.min.js"></script>
-	<script src="../../../assets/js/vendor/forms/wizards/steps.min.js"></script>
-	<script src="../../../assets/js/vendor/forms/validation/validate.min.js"></script>
-
-	<script src="assets/js/app.js"></script>
-	<script src="../../../assets/demo/pages/form_wizard.js"></script>
-	<!-- /theme JS files -->
 </head>
 
 <body>
@@ -265,7 +258,7 @@
 							</a>
 							<ul class="nav-group-sub collapse">
 								<li class="nav-item"><a href="developer_my_applications.html" class="nav-link">My Applications</a></li>
-								<li class="nav-item"><a href="developer_submit_application.html" class="nav-link">Submit Application</a></li>
+								<li class="nav-item"><a href="" class="nav-link">Submit Application</a></li>
 								<li class="nav-item"><a href="developer_review_api.html" class="nav-link">Review APIs</a></li>
 							</ul>
 						</li>
@@ -386,7 +379,7 @@
 							<div class="breadcrumb py-2">
 								<a href="index.html" class="breadcrumb-item"><i class="ph-house"></i></a>
 								<a href="#" class="breadcrumb-item">Home</a>
-								<span class="breadcrumb-item active">Submit Application</span>
+								<span class="breadcrumb-item active">Dashboard</span>
 							</div>
 
 							<a href="#breadcrumb_elements" class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto" data-bs-toggle="collapse">
@@ -433,148 +426,212 @@
 				</div>
 				<!-- /page header -->
 
-
 				<!-- Content area -->
 				<div class="content">
 
-					<!-- Main charts -->
-
-					<!-- /main charts -->
-
-
-					<!-- Dashboard content -->
 					<div class="row">
-						<div class="col-12">
-							<h2 class="mb-3">Submit an AI Application for review</h2>
-							<p>Follow these steps to submit a new AI application for approval. Please provide all the requested information.</p>
+                        <div class="col-12">
+							<h2 class="mb-3">Dashboard</h2>
+							<!-- <p>Review important information of the AI Application, such as the reccomended policy packs as well as its potential imapact.</p> -->
 						</div>
-						<div class="col-12">
 
-							<!-- Marketing campaigns -->
-                            <div class="card">
-        
-                                <form class="wizard-form steps-basic" action="#" id="form1">
-                                    <h6>1: Name</h6>
-                                    <fieldset>
-                                        <div class="row">
-                                            <h3>AI Application, step 1</h3>
-                                            <div class="col-lg-8">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Application Name</label>
-                                                    <input type="text" name="name" class="form-control" placeholder="TalentAssess AI">
-                                                </div>
-                                            </div>
-        
-                                            <div class="col-lg-8">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Summary</label>
-                                                    <textarea type="textarea" name="Summary" class="form-control" placeholder="TalentAssess AI, designed for the company's HR department, automates the evaluation of tests and assignments during recruitment processes." rows="4"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-        
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">URL</label>
-                                                    <input type="text" name="tel" class="form-control" placeholder="Paste URL here">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-        
-                                    <h6>2: Use Case</h6>
-                                    <fieldset>
-                                        <div class="row">
-                                            <h3>AI Application, step 2</h3>
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Domain</label>
-                                                    <select name="domain" class="form-select">
-														<option value="1">Select from List</option>
-														<option value="2">Content Generation</option>
-														<option value="3">Automated Grading</option>
-														<option value="4">Generative Images</option>
-														<option value="5">Chatbot</option>
-														<option value="6">Facial Recognition</option>
-														<option value="7">Image Classification</option>
-														<option value="8">Sentiment Analysis</option>
-														<option value="9">Algorithmic Trading</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-        
-                                        <div class="row">
-                                            <div class="col-lg-8">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Use Case</label>
-                                                    <textarea type="text" name="degree-level" placeholder="TalentAssess AI is an innovative solution tailored for HR departments, revolutionizing the recruitment process by automating the assessment of tests and assignments. TalentAssess AI can benefit a company by streamlining and enhancing its HR recruitment procedures." class="form-control" rows="4"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-        
-                                    <h6>3: Code</h6>
-                                    <fieldset>
-                                        <div class="row">
-                                            <h3>AI Application, step 3</h3>
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Code Repository URL</label>
-                                                    <input type="text" name="experience-company" placeholder="Paste URL here, eg GITHUB" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-        
-                                    <h6>4: AI Vendor</h6>
-                                    <fieldset>
-                                        <div class="row">   
-                                            <h3>AI Application, step 4</h3>     
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">AI Vendor selection</label>
-                                                    <select name="source" class="form-select">
-														<option value="1" selected>Select From the List</option>
-														<option value="OpenAI">OpenAI</option>
-														<option value="Anthropic">Anthropic</option>
-														<option value="IBM Watson">IBM Watson</option>
-														<option value="Nvidia AI">Nvidia AI</option>
-														<option value="Google Deepmind">Google Deepmind</option>
-														<option value="Custom-Model-A">Custom-Model-A</option>
-														<option value="Custom-Model-B">Custom-Model-B</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
+                        <div class="col-12">
 
+							<!-- Traffic sources -->
+							<div class="card">
+								<div class="card-header d-flex align-items-center">
+									<h5 class="mb-0">Total API Usage Past</h5>
+									<div class="ms-auto">
+                                        <select class="form-select" id="updateSelect">
+                                            <option value="none">Month</option>
+                                            <option value="5">7 Days</option>
+                                            <option value="10">24 hours,</option>
+                                        </select>
+									</div>
+								</div>
+
+								<div class="card-body pb-0">
 									<div class="row">
-										<div class="col-12">
-											<button class="btn btn-primary d-none float-end m-5"  id="form-submitted-button">Submit</button>
+										<div class="col-sm-4">
+											<div class="d-flex align-items-center justify-content-center mb-2">
+												<a href="#" class="bg-indigo bg-opacity-10 text-indigo lh-1 rounded-pill p-2 me-3">
+													<i class="ph-plus"></i>
+												</a>
+												<div>
+													<div class="fw-semibold">Total Requests</div>
+													<span class="text-muted">3,750</span>
+												</div>
+											</div>
+                                            <div class="w-75 mx-auto mb-3" id="total-online"></div>
+										</div>
+
+										<div class="col-sm-4">
+											<div class="d-flex align-items-center justify-content-center mb-2">
+												<a href="#" class="bg-warning bg-opacity-10 text-warning lh-1 rounded-pill p-2 me-3">
+													<i class="ph-x-circle"></i>
+												</a>
+												<div>
+													<div class="fw-semibold">Passed Requests</div>
+													<span class="text-muted">2,349</span>
+												</div>
+											</div>
+											<div class="w-75 mx-auto mb-3" id="new-sessions"></div>
+										</div>
+
+										<div class="col-sm-4">
+											<div class="d-flex align-items-center justify-content-center mb-2">
+												<a href="#" class="bg-success bg-opacity-10 text-success lh-1 rounded-pill p-2 me-3">
+													<i class="ph-check"></i>
+												</a>
+												<div>
+													<div class="fw-semibold">Denied Requests</div>
+													<span class="text-muted">800</span>
+												</div>
+											</div>
+											<div class="w-75 mx-auto mb-3" id="new-visitors"></div>
 										</div>
 									</div>
-                                    <div class="row d-none m-3" id="form-submitted">
-                                        <div class="col-lg-6">
-                                            <h5>Application submitted</h5>
-                                            <p>Your application has been successfully submitted for approval. Please check your list of applications to monitor the status of your pending approvals.</p>
-                                            <a href="" class="btn btn-primary">Go to my applications</a>
+								</div>
+							</div>
+							<!-- /traffic sources -->
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card recommended-policies">
+                                <div class="card-header pb-0">
+                                    <h6 class="mb-0 text-center">Shortcuts</h6>
+                                </div>
+
+                                <div class="card-body shortcuts">
+                                    <div class="row">
+                                        <div class="col-6">
+											<a href="developer_submit_application.html">
+												<div class="card card-body bg-primary text-white text-center">
+													<div>
+														<i class="ph-rocket-launch ph-2x opacity-75"></i>
+														<div>
+															Launch new <br> app
+														</div>
+													</div>
+												</div>
+											</a>
+                                        </div>
+                                        <div class="col-6">
+											<a href="developer_my_applications.html">
+												<div class="card card-body bg-primary text-white text-center">
+													<div>
+														<i class="ph-check ph-2x opacity-75"></i>
+														<div>
+															Deploy <br> API
+														</div>
+													</div>
+												</div>
+											</a>
+                                        </div>
+                                        <div class="col-12">
+											<a href="developer_review_api.html">
+												<div class="card card-body bg-primary text-white text-center p-2">
+													<div>
+														<i class="ph-square-half-bottom ph-2x opacity-75"></i>
+														<div>
+															Monitor Applications
+														</div>
+													</div>
+												</div>
+											</a>
                                         </div>
                                     </div>
-                                    
-                                </form>
-
+                                </div>
                             </div>
-							<!-- /marketing campaigns -->
+                        </div>
+
+                        <div class="col-sm-6 col-xl-4">
+
+                            <div class="card text-center">
+                                <div class="card-header">
+                                    <h6 class="mb-0">Requests Analysis Server Load</h6>
+                                </div>
+                                <div class="card-body">
+                                    <!-- <div class="fs-sm text-muted mb-3">49% average</div> -->
+
+                                    <div class="svg-center" id="arc_single"></div>
+                                </div>
+							</div>
 
 						</div>
-					</div>
-					<!-- /dashboard content -->
+                        
+                        <div class="col-sm-6 col-xl-4">
 
+							<a href="developer_review_api.html"  class="text-black">
+								<div class="card text-center">
+									<div class="card-header">
+										<h6 class="mb-0">Total AI Applications</h6>
+									</div>
+									<div class="card-body pb-0">
+										<h2>45</h2>
+									</div>
+								</div>
+							</a>
+
+							<a href="developer_my_applications.html" class="text-black">
+								<div class="card text-center">
+									<div class="card-header">
+										<h6 class="mb-0">Applications Pending Approval</h6>
+									</div>
+									<div class="card-body pb-0">
+										<h2>35</h2>
+									</div>
+								</div>
+							</a>
+
+                        </div>
+
+                        <div class="col-lg-8 offset-2">
+                            <div class="card">
+                                <div class="card-header d-flex">
+                                    <h5 class="mb-0">Requests per Application</h5>
+									<div class="ms-auto">
+                                        <select class="form-select" id="updateSelect">
+                                            <option value="none">Month</option>
+                                            <option value="5">7 Days</option>
+                                            <option value="10">24 hours,</option>
+                                        </select>
+									</div>
+                                </div>
+        
+                                <div class="card-body">
+                                    14,321 Total Requests
+                                </div>
+        
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Application</th>
+                                                <th>Requests</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>TalentAssess AI</td>
+                                                <td>7,321</td>
+                                            </tr>
+                                            <tr>
+                                                <td>CorpWrite</td>
+                                                <td>4,531</td>
+                                            </tr>
+                                            <tr>
+                                                <td>HelpMate AI</td>
+                                                <td>1,3080</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        
+					</div>
 				</div>
 				<!-- /content area -->
-
 
 				<!-- Footer -->
 				<!-- <div class="navbar navbar-sm navbar-footer border-top">
@@ -925,26 +982,5 @@
 		</div>
 	</div> -->
 	<!-- /demo config -->
-	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-			// Get the Generate button
-			var submitButton = document.getElementById('form-submitted-button');
-
-			// Get the table element
-			var form = document.getElementById('form-submitted');
-
-			// Add click event listener to the Generate button
-			submitButton.addEventListener('click', function() {
-				submitButton.style.display = 'none';
-				// Remove the 'd-none' class from the form
-				form.classList.remove('d-none');
-			});
-
-			var form1 = document.getElementById('form1');
-			form1.addEventListener("submit", function(event) {
-				event.preventDefault();
-			});
-		});
-	</script>
 </body>
 </html>

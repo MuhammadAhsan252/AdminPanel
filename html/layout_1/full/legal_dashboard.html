@@ -10,7 +10,7 @@
 	<link href="../../../assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
 	<link href="../../../assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/ltr/all.min.css" id="stylesheet" rel="stylesheet" type="text/css">
-    <link href="assets/css/ltr/bootstrap.css" id="stylesheet" rel="stylesheet" type="text/css">
+    <link href="assets/css/ltr/additional_styling.css" id="stylesheet" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 	<!-- /global stylesheets -->
 
@@ -35,16 +35,16 @@
 	<script src="../../../assets/demo/charts/pages/dashboard/heatmaps.js"></script>
 	<script src="../../../assets/demo/charts/pages/dashboard/pies.js"></script>
 	<script src="../../../assets/demo/charts/pages/dashboard/bullets.js"></script>
+    <script src="../../../assets/demo/pages/widgets_stats2.js"></script>
+
+    
+
+
+    <script src="https://www.gstatic.com/charts/loader.js"></script>
+	<script src="../../../assets/demo/charts/google/bars/column.js"></script>
+	<script src="../../../assets/demo/charts/google/bars/column_stacked.js"></script>
 	<!-- /theme JS files -->
 
-    <!-- Theme JS files -->
-	<script src="../../../assets/js/jquery/jquery.min.js"></script>
-	<script src="../../../assets/js/vendor/forms/wizards/steps.min.js"></script>
-	<script src="../../../assets/js/vendor/forms/validation/validate.min.js"></script>
-
-	<script src="assets/js/app.js"></script>
-	<script src="../../../assets/demo/pages/form_wizard.js"></script>
-	<!-- /theme JS files -->
 </head>
 
 <body>
@@ -185,7 +185,7 @@
 							<img src="../../../assets/images/demo/users/face11.jpg" class="w-32px h-32px rounded-pill" alt="">
 							<span class="status-indicator bg-success"></span>
 						</div>
-						<span class="d-none d-lg-inline-block mx-lg-2">Maria Callas <br>Developer</span>
+						<span class="d-none d-lg-inline-block mx-lg-2">Maria Callas <br>Legal</span>
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-end">
@@ -252,8 +252,8 @@
 							<div class="text-uppercase fs-sm lh-sm opacity-50 sidebar-resize-hide">Main</div>
 							<i class="ph-dots-three sidebar-resize-show"></i>
 						</li>
-                        <li class="nav-item">
-							<a href="developer_dashboard.html" class="nav-link">
+						<li class="nav-item">
+							<a href="legal_dashboard.html" class="nav-link">
 								<i class="fa-solid fa-home"></i>
 								<span>Dashboard</span>
 							</a>
@@ -264,10 +264,22 @@
 								<span>AI Applications</span>
 							</a>
 							<ul class="nav-group-sub collapse">
-								<li class="nav-item"><a href="developer_my_applications.html" class="nav-link">My Applications</a></li>
-								<li class="nav-item"><a href="developer_submit_application.html" class="nav-link">Submit Application</a></li>
-								<li class="nav-item"><a href="developer_review_api.html" class="nav-link">Review APIs</a></li>
+								<li class="nav-item"><a href="legal_overview.html" class="nav-link">Overview</a></li>
 							</ul>
+						</li>
+                        <li class="nav-item">
+							<a href="legal_risk_visualizer.html" class="nav-link">
+								<i class="fa-solid fa-circle-info"></i>
+								<span>
+									Risks Visualizer
+								</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="legal_report_module.html" class="nav-link">
+								<i class="fa-solid fa-file"></i>
+								<span>Report Module</span>
+							</a>
 						</li>
 						<!-- /page kits -->
 
@@ -386,7 +398,7 @@
 							<div class="breadcrumb py-2">
 								<a href="index.html" class="breadcrumb-item"><i class="ph-house"></i></a>
 								<a href="#" class="breadcrumb-item">Home</a>
-								<span class="breadcrumb-item active">Submit Application</span>
+								<span class="breadcrumb-item active">Dashboard</span>
 							</div>
 
 							<a href="#breadcrumb_elements" class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto" data-bs-toggle="collapse">
@@ -433,148 +445,345 @@
 				</div>
 				<!-- /page header -->
 
-
 				<!-- Content area -->
 				<div class="content">
 
-					<!-- Main charts -->
-
-					<!-- /main charts -->
-
-
-					<!-- Dashboard content -->
 					<div class="row">
-						<div class="col-12">
-							<h2 class="mb-3">Submit an AI Application for review</h2>
-							<p>Follow these steps to submit a new AI application for approval. Please provide all the requested information.</p>
+                        <div class="col-12">
+							<h2 class="mb-3">Dashboard</h2>
+							<!-- <p>Review important information of the AI Application, such as the reccomended policy packs as well as its potential imapact.</p> -->
 						</div>
-						<div class="col-12">
 
-							<!-- Marketing campaigns -->
-                            <div class="card">
-        
-                                <form class="wizard-form steps-basic" action="#" id="form1">
-                                    <h6>1: Name</h6>
-                                    <fieldset>
-                                        <div class="row">
-                                            <h3>AI Application, step 1</h3>
-                                            <div class="col-lg-8">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Application Name</label>
-                                                    <input type="text" name="name" class="form-control" placeholder="TalentAssess AI">
-                                                </div>
-                                            </div>
-        
-                                            <div class="col-lg-8">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Summary</label>
-                                                    <textarea type="textarea" name="Summary" class="form-control" placeholder="TalentAssess AI, designed for the company's HR department, automates the evaluation of tests and assignments during recruitment processes." rows="4"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-        
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">URL</label>
-                                                    <input type="text" name="tel" class="form-control" placeholder="Paste URL here">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-        
-                                    <h6>2: Use Case</h6>
-                                    <fieldset>
-                                        <div class="row">
-                                            <h3>AI Application, step 2</h3>
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Domain</label>
-                                                    <select name="domain" class="form-select">
-														<option value="1">Select from List</option>
-														<option value="2">Content Generation</option>
-														<option value="3">Automated Grading</option>
-														<option value="4">Generative Images</option>
-														<option value="5">Chatbot</option>
-														<option value="6">Facial Recognition</option>
-														<option value="7">Image Classification</option>
-														<option value="8">Sentiment Analysis</option>
-														<option value="9">Algorithmic Trading</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-        
-                                        <div class="row">
-                                            <div class="col-lg-8">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Use Case</label>
-                                                    <textarea type="text" name="degree-level" placeholder="TalentAssess AI is an innovative solution tailored for HR departments, revolutionizing the recruitment process by automating the assessment of tests and assignments. TalentAssess AI can benefit a company by streamlining and enhancing its HR recruitment procedures." class="form-control" rows="4"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-        
-                                    <h6>3: Code</h6>
-                                    <fieldset>
-                                        <div class="row">
-                                            <h3>AI Application, step 3</h3>
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Code Repository URL</label>
-                                                    <input type="text" name="experience-company" placeholder="Paste URL here, eg GITHUB" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-        
-                                    <h6>4: AI Vendor</h6>
-                                    <fieldset>
-                                        <div class="row">   
-                                            <h3>AI Application, step 4</h3>     
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">AI Vendor selection</label>
-                                                    <select name="source" class="form-select">
-														<option value="1" selected>Select From the List</option>
-														<option value="OpenAI">OpenAI</option>
-														<option value="Anthropic">Anthropic</option>
-														<option value="IBM Watson">IBM Watson</option>
-														<option value="Nvidia AI">Nvidia AI</option>
-														<option value="Google Deepmind">Google Deepmind</option>
-														<option value="Custom-Model-A">Custom-Model-A</option>
-														<option value="Custom-Model-B">Custom-Model-B</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
+                        <div class="col-12">
 
+							<!-- Traffic sources -->
+							<div class="card">
+								<div class="card-header d-flex align-items-center">
+									<h5 class="mb-0">Total API Usage Past</h5>
+									<div class="ms-auto">
+                                        <select class="form-select" id="updateSelect">
+                                            <option value="none">Month</option>
+                                            <option value="5">7 Days</option>
+                                            <option value="10">24 hours,</option>
+                                        </select>
+									</div>
+								</div>
+
+								<div class="card-body pb-0">
 									<div class="row">
-										<div class="col-12">
-											<button class="btn btn-primary d-none float-end m-5"  id="form-submitted-button">Submit</button>
+										<div class="col-sm-4">
+											<div class="d-flex align-items-center justify-content-center mb-2">
+												<a href="#" class="bg-indigo bg-opacity-10 text-indigo lh-1 rounded-pill p-2 me-3">
+													<i class="ph-plus"></i>
+												</a>
+												<div>
+													<div class="fw-semibold">Total Requests</div>
+													<span class="text-muted">3,750</span>
+												</div>
+											</div>
+                                            <div class="w-75 mx-auto mb-3" id="total-online"></div>
+										</div>
+
+										<div class="col-sm-4">
+											<div class="d-flex align-items-center justify-content-center mb-2">
+												<a href="#" class="bg-warning bg-opacity-10 text-warning lh-1 rounded-pill p-2 me-3">
+													<i class="ph-x-circle"></i>
+												</a>
+												<div>
+													<div class="fw-semibold">Passed Requests</div>
+													<span class="text-muted">2,349</span>
+												</div>
+											</div>
+											<div class="w-75 mx-auto mb-3" id="new-sessions"></div>
+										</div>
+
+										<div class="col-sm-4">
+											<div class="d-flex align-items-center justify-content-center mb-2">
+												<a href="#" class="bg-success bg-opacity-10 text-success lh-1 rounded-pill p-2 me-3">
+													<i class="ph-check"></i>
+												</a>
+												<div>
+													<div class="fw-semibold">Denied Requests</div>
+													<span class="text-muted">800</span>
+												</div>
+											</div>
+											<div class="w-75 mx-auto mb-3" id="new-visitors"></div>
 										</div>
 									</div>
-                                    <div class="row d-none m-3" id="form-submitted">
-                                        <div class="col-lg-6">
-                                            <h5>Application submitted</h5>
-                                            <p>Your application has been successfully submitted for approval. Please check your list of applications to monitor the status of your pending approvals.</p>
-                                            <a href="" class="btn btn-primary">Go to my applications</a>
+								</div>
+							</div>
+							<!-- /traffic sources -->
+                        </div>
+                        <div class="col-lg-4 offset-2">
+							<div class="card">
+								<div class="card-header d-flex align-items-center">
+									<h6 class="mb-0">Compliance Progress of AI Applications</h6>
+								</div>
+                                <div class="svg-center text-center m-2" id="arc_single"></div>
+								<div class="card-body">
+						            <div class="mb-3">
+						                <div class="d-flex align-items-center mb-1">NIST AI RMF Pack <span class="text-muted ms-auto">50%</span></div>
+										<div class="progress" style="height: 0.375rem;">
+											<div class="progress-bar bg-info" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+						            </div>
+
+						            <div class="mb-3">
+						                <div class="d-flex align-items-center mb-1">NIST AI RMF Pack <span class="text-muted ms-auto">70%</span></div>
+										<div class="progress" style="height: 0.375rem;">
+											<div class="progress-bar bg-danger" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+						            </div>
+
+						            <div class="mb-3">
+						                <div class="d-flex align-items-center mb-1">EU AI Act Readiness Pack <span class="text-muted ms-auto">80%</span></div>
+										<div class="progress" style="height: 0.375rem;">
+											<div class="progress-bar bg-success" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+						            </div>
+
+						            <div>
+						                <div class="d-flex align-items-center mb-1">NYC Algorythmic Hiring Law <span class="text-muted ms-auto">60%</span></div>
+										<div class="progress" style="height: 0.375rem;">
+											<div class="progress-bar bg-primary" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+										</div>
+						            </div>
+								</div>
+							</div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="border rounded">
+                                    <div class="list-group list-group-flush">
+                                        <div class="list-group-item fw-semibold">Compliance Required Per Application</div>
+
+                                        <div class="list-group-item">
+                                            <div class="d-flex my-1">
+                                                <a href="#" class="d-block me-3">
+                                                    <img src="../../../assets/images/logo_icon.svg" class="rounded-circle" width="42" height="42" alt="">
+                                                </a>
+
+                                                <div class="flex-fill">
+                                                    <div class="fw-semibold">EU AI ACT</div>
+                                                    7 Applications
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item">
+                                            <div class="d-flex my-1">
+                                                <a href="#" class="d-block me-3">
+                                                    <img src="../../../assets/images/logo_icon.svg" class="rounded-circle" width="42" height="42" alt="">
+                                                </a>
+
+                                                <div class="flex-fill">
+                                                    <div class="fw-semibold">NIST AI RMF Pack</div>
+                                                    3 Applications
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item">
+                                            <div class="d-flex my-1">
+                                                <a href="#" class="d-block me-3">
+                                                    <img src="../../../assets/images/logo_icon.svg" class="rounded-circle" width="42" height="42" alt="">
+                                                </a>
+
+                                                <div class="flex-fill">
+                                                    <div class="fw-semibold">NYC Algorythmic Law</div>
+                                                    2 Applications
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item">
+                                            <div class="d-flex my-1">
+                                                <a href="#" class="d-block me-3">
+                                                    <img src="../../../assets/images/logo_icon.svg" class="rounded-circle" width="42" height="42" alt="">
+                                                </a>
+
+                                                <div class="flex-fill">
+                                                    <div class="fw-semibold">EEOC On AI Framework</div>
+                                                    1 Application
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item">
+                                            <div class="d-flex my-1">
+                                                <a href="#" class="d-block me-3">
+                                                    <img src="../../../assets/images/logo_icon.svg" class="rounded-circle" width="42" height="42" alt="">
+                                                </a>
+
+                                                <div class="flex-fill">
+                                                    <div class="fw-semibold">Colorado SB21 Law</div>
+                                                    1 Application
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    
-                                </form>
-
+                                </div>
                             </div>
-							<!-- /marketing campaigns -->
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-header pb-0">
+                                    <h6 class="mb-0 text-center">Latest Introduced Policies</h6>
+                                </div>
 
-						</div>
+                                <div class="card-body shortcuts">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="accordion accordion-flush" id="accordion_flush">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#flush_item1">
+                                                            Accordion Item #1
+                                                        </button>
+                                                    </h2>
+                                                    <div id="flush_item1" class="accordion-collapse collapse show" data-bs-parent="#accordion_flush">
+                                                        <div class="accordion-body">
+                                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch.
+                                                        </div>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush_item2">
+                                                            Accordion Item #2
+                                                        </button>
+                                                    </h2>
+                                                    <div id="flush_item2" class="accordion-collapse collapse" data-bs-parent="#accordion_flush">
+                                                        <div class="accordion-body">
+                                                            Тon cupidatat skateboard dolor brunch. Тesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda.
+                                                        </div>
+                                                    </div>
+                                                </div>
+            
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button fw-semibold collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush_item3">
+                                                            Accordion Item #3
+                                                        </button>
+                                                    </h2>
+                                                    <div id="flush_item3" class="accordion-collapse collapse" data-bs-parent="#accordion_flush">
+                                                        <div class="accordion-body">
+                                                            3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl-8">
+                            <div class="row">
+                                <div class="col-sm-6 col-xl-12">
+                                    <!-- Traffic sources -->
+                                    <div class="card">
+
+                                        <div class="card-body pb-0">
+                                            <div class="row">
+                                                <div class="col-sm-6 border-end mb-2">
+                                                    <div class="d-flex align-items-center justify-content-center mb-2 text-center">
+                                                        <div>
+                                                            <h5 class="fw-semibold">Policies in Use</h5>
+                                                            <h1>20</h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3 border-end mb-2">
+                                                    <div class="d-flex align-items-center justify-content-center mb-2 text-center">
+                                                        <div>
+                                                            <a href="legal_internal_policies.html"><h5 class="fw-semibold">Internal</h5></a>
+                                                            <h1>9</h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3 mb-2">
+                                                    <div class="d-flex align-items-center justify-content-center mb-2 text-center">
+                                                        <div>
+                                                            <a href="legal_external_policies.html"><h5 class="fw-semibold">External</h5></a>
+                                                            <h1>11</h1>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- /traffic sources -->
+                                </div>
+
+                                <div class="col-sm-6 col-xl-6">
+
+                                    <a href="legal_report_module.html"  class="text-black">
+                                        <div class="card text-center">
+                                            <div class="card-header">
+                                                <h6 class="mb-0">Total AI Applications</h6>
+                                            </div>
+                                            <div class="card-body pb-0">
+                                                <h2>45</h2>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                                
+                                <div class="col-sm-6 col-xl-6">
+
+                                    <a href="#" class="text-black">
+                                        <div class="card text-center">
+                                            <div class="card-header">
+                                                <h6 class="mb-0">Applications Pending Approval</h6>
+                                            </div>
+                                            <div class="card-body pb-0">
+                                                <h2>35</h2>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-8">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">Risk Category Levels</h5>
+                                </div>
+        
+                                <div class="card-body">
+                                    <div class="chart-container">
+                                        <div class="chart" id="google-column"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-xl-4">
+
+							<a href="legal_overview.html" class="text-black">
+								<div class="card text-center">
+									<div class="card-header">
+										<h6 class="mb-0">Reports Generated</h6>
+									</div>
+									<div class="card-body pb-0">
+										<h2>35</h2>
+									</div>
+								</div>
+							</a>
+
+                        </div>
+                        
 					</div>
-					<!-- /dashboard content -->
-
 				</div>
 				<!-- /content area -->
-
 
 				<!-- Footer -->
 				<!-- <div class="navbar navbar-sm navbar-footer border-top">
@@ -925,26 +1134,5 @@
 		</div>
 	</div> -->
 	<!-- /demo config -->
-	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-			// Get the Generate button
-			var submitButton = document.getElementById('form-submitted-button');
-
-			// Get the table element
-			var form = document.getElementById('form-submitted');
-
-			// Add click event listener to the Generate button
-			submitButton.addEventListener('click', function() {
-				submitButton.style.display = 'none';
-				// Remove the 'd-none' class from the form
-				form.classList.remove('d-none');
-			});
-
-			var form1 = document.getElementById('form1');
-			form1.addEventListener("submit", function(event) {
-				event.preventDefault();
-			});
-		});
-	</script>
 </body>
 </html>

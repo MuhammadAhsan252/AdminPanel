@@ -3490,18 +3490,18 @@ var StatisticWidgets = function() {
             // _barChartWidget("#chart_bar_color", 24, 50, true, "elastic", 1200, 50, "rgba(255,255,255,0.75)", "members");
 
             // _lineChartWidget('#line_chart_simple', 50, '#2196F3', 'rgba(33,150,243,0.5)', '#2196F3', '#2196F3');
-            _lineChartWidget('#line_chart_color', 50, '#fff', 'rgba(255,255,255,0.5)', '#fff', '#29B6F6');
+            // _lineChartWidget('#line_chart_color', 50, '#fff', 'rgba(255,255,255,0.5)', '#fff', '#29B6F6');
 
             // _sparklinesWidget("#sparklines_basic", "area", 30, 50, "basis", 750, 2000, "#66BB6A");
             // _sparklinesWidget("#sparklines_color", "area", 30, 50, "basis", 750, 2000, "rgba(255,255,255,0.75)");
 
-            _progressIcon('#progress_icon_one', 42, 2.5, "#4cb6ac", 0.68, "ph-check");
-            _progressIcon('#progress_icon_two', 42, 2.5, "#ec3f7a", 0.82, "ph-x");
+            // _progressIcon('#progress_icon_one', 42, 2.5, "#4cb6ac", 0.68, "ph-check");
+            // _progressIcon('#progress_icon_two', 42, 2.5, "#ec3f7a", 0.82, "ph-x");
             // _progressIcon('#progress_icon_three', 42, 2.5, "#fff", 0.73, "ph-package");
             // _progressIcon('#progress_icon_four', 42, 2.5, "#fff", 0.49, "ph-truck");
 
-            _progressPercentage('#progress_percentage_one', 46, 3, "#ec3f7a", 0.79);
-            _progressPercentage('#progress_percentage_two', 46, 3, "#66bb6a", 0.62);
+            // _progressPercentage('#progress_percentage_one', 46, 3, "#ec3f7a", 0.79);
+            // _progressPercentage('#progress_percentage_two', 46, 3, "#66bb6a", 0.62);
             // _progressPercentage('#progress_percentage_three', 46, 3, "#fff", 0.69);
             // _progressPercentage('#progress_percentage_four', 46, 3, "#fff", 0.43);
 

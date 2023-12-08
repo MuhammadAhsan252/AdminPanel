@@ -10,8 +10,8 @@
 	<link href="../../../assets/fonts/inter/inter.css" rel="stylesheet" type="text/css">
 	<link href="../../../assets/icons/phosphor/styles.min.css" rel="stylesheet" type="text/css">
 	<link href="assets/css/ltr/all.min.css" id="stylesheet" rel="stylesheet" type="text/css">
-    <link href="assets/css/ltr/bootstrap.css" id="stylesheet" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+	<link href="assets/css/ltr/additional_styling.css" rel="stylesheet" type="text/css">
 	<!-- /global stylesheets -->
 
 	<!-- Core JS files -->
@@ -37,14 +37,16 @@
 	<script src="../../../assets/demo/charts/pages/dashboard/bullets.js"></script>
 	<!-- /theme JS files -->
 
-    <!-- Theme JS files -->
+   	<!-- Date JS files -->
 	<script src="../../../assets/js/jquery/jquery.min.js"></script>
-	<script src="../../../assets/js/vendor/forms/wizards/steps.min.js"></script>
-	<script src="../../../assets/js/vendor/forms/validation/validate.min.js"></script>
+	<script src="../../../assets/js/vendor/ui/moment/moment.min.js"></script>
+	<script src="../../../assets/js/vendor/pickers/daterangepicker.js"></script>
+	<script src="../../../assets/js/vendor/pickers/datepicker.min.js"></script>
 
 	<script src="assets/js/app.js"></script>
-	<script src="../../../assets/demo/pages/form_wizard.js"></script>
-	<!-- /theme JS files -->
+	<script src="../../../assets/demo/pages/picker_date.js"></script>
+	<!-- /DateJS files -->
+
 </head>
 
 <body>
@@ -185,7 +187,7 @@
 							<img src="../../../assets/images/demo/users/face11.jpg" class="w-32px h-32px rounded-pill" alt="">
 							<span class="status-indicator bg-success"></span>
 						</div>
-						<span class="d-none d-lg-inline-block mx-lg-2">Maria Callas <br>Developer</span>
+						<span class="d-none d-lg-inline-block mx-lg-2">Enrico Caruso <br>Legal</span>
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-end">
@@ -252,8 +254,8 @@
 							<div class="text-uppercase fs-sm lh-sm opacity-50 sidebar-resize-hide">Main</div>
 							<i class="ph-dots-three sidebar-resize-show"></i>
 						</li>
-                        <li class="nav-item">
-							<a href="developer_dashboard.html" class="nav-link">
+						<li class="nav-item">
+							<a href="legal_dashboard.html" class="nav-link">
 								<i class="fa-solid fa-home"></i>
 								<span>Dashboard</span>
 							</a>
@@ -264,10 +266,22 @@
 								<span>AI Applications</span>
 							</a>
 							<ul class="nav-group-sub collapse">
-								<li class="nav-item"><a href="developer_my_applications.html" class="nav-link">My Applications</a></li>
-								<li class="nav-item"><a href="developer_submit_application.html" class="nav-link">Submit Application</a></li>
-								<li class="nav-item"><a href="developer_review_api.html" class="nav-link">Review APIs</a></li>
+								<li class="nav-item"><a href="legal_overview.html" class="nav-link">Overview</a></li>
 							</ul>
+						</li>
+                        <li class="nav-item">
+							<a href="legal_risk_visualizer.html" class="nav-link">
+								<i class="fa-solid fa-circle-info"></i>
+								<span>
+									Risks Visualizer
+								</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="legal_report_module.html" class="nav-link">
+								<i class="fa-solid fa-file"></i>
+								<span>Report Module</span>
+							</a>
 						</li>
 						<!-- /page kits -->
 
@@ -386,7 +400,7 @@
 							<div class="breadcrumb py-2">
 								<a href="index.html" class="breadcrumb-item"><i class="ph-house"></i></a>
 								<a href="#" class="breadcrumb-item">Home</a>
-								<span class="breadcrumb-item active">Submit Application</span>
+								<span class="breadcrumb-item active">Internal Policies</span>
 							</div>
 
 							<a href="#breadcrumb_elements" class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto" data-bs-toggle="collapse">
@@ -445,127 +459,101 @@
 					<!-- Dashboard content -->
 					<div class="row">
 						<div class="col-12">
-							<h2 class="mb-3">Submit an AI Application for review</h2>
-							<p>Follow these steps to submit a new AI application for approval. Please provide all the requested information.</p>
+							<h2 class="mb-3">Internal Policies</h2>
+							<p>Review existing internal policies. Here, you can edit and delete any existing policies as needed.</p>
 						</div>
 						<div class="col-12">
 
 							<!-- Marketing campaigns -->
-                            <div class="card">
-        
-                                <form class="wizard-form steps-basic" action="#" id="form1">
-                                    <h6>1: Name</h6>
-                                    <fieldset>
-                                        <div class="row">
-                                            <h3>AI Application, step 1</h3>
-                                            <div class="col-lg-8">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Application Name</label>
-                                                    <input type="text" name="name" class="form-control" placeholder="TalentAssess AI">
-                                                </div>
-                                            </div>
-        
-                                            <div class="col-lg-8">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Summary</label>
-                                                    <textarea type="textarea" name="Summary" class="form-control" placeholder="TalentAssess AI, designed for the company's HR department, automates the evaluation of tests and assignments during recruitment processes." rows="4"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-        
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">URL</label>
-                                                    <input type="text" name="tel" class="form-control" placeholder="Paste URL here">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-        
-                                    <h6>2: Use Case</h6>
-                                    <fieldset>
-                                        <div class="row">
-                                            <h3>AI Application, step 2</h3>
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Domain</label>
-                                                    <select name="domain" class="form-select">
-														<option value="1">Select from List</option>
-														<option value="2">Content Generation</option>
-														<option value="3">Automated Grading</option>
-														<option value="4">Generative Images</option>
-														<option value="5">Chatbot</option>
-														<option value="6">Facial Recognition</option>
-														<option value="7">Image Classification</option>
-														<option value="8">Sentiment Analysis</option>
-														<option value="9">Algorithmic Trading</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-        
-                                        <div class="row">
-                                            <div class="col-lg-8">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Use Case</label>
-                                                    <textarea type="text" name="degree-level" placeholder="TalentAssess AI is an innovative solution tailored for HR departments, revolutionizing the recruitment process by automating the assessment of tests and assignments. TalentAssess AI can benefit a company by streamlining and enhancing its HR recruitment procedures." class="form-control" rows="4"></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-        
-                                    <h6>3: Code</h6>
-                                    <fieldset>
-                                        <div class="row">
-                                            <h3>AI Application, step 3</h3>
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">Code Repository URL</label>
-                                                    <input type="text" name="experience-company" placeholder="Paste URL here, eg GITHUB" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-        
-                                    <h6>4: AI Vendor</h6>
-                                    <fieldset>
-                                        <div class="row">   
-                                            <h3>AI Application, step 4</h3>     
-                                            <div class="col-lg-6">
-                                                <div class="mb-3">
-                                                    <label class="form-label">AI Vendor selection</label>
-                                                    <select name="source" class="form-select">
-														<option value="1" selected>Select From the List</option>
-														<option value="OpenAI">OpenAI</option>
-														<option value="Anthropic">Anthropic</option>
-														<option value="IBM Watson">IBM Watson</option>
-														<option value="Nvidia AI">Nvidia AI</option>
-														<option value="Google Deepmind">Google Deepmind</option>
-														<option value="Custom-Model-A">Custom-Model-A</option>
-														<option value="Custom-Model-B">Custom-Model-B</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </fieldset>
+							<div class="card data-card">
 
-									<div class="row">
-										<div class="col-12">
-											<button class="btn btn-primary d-none float-end m-5"  id="form-submitted-button">Submit</button>
-										</div>
-									</div>
-                                    <div class="row d-none m-3" id="form-submitted">
-                                        <div class="col-lg-6">
-                                            <h5>Application submitted</h5>
-                                            <p>Your application has been successfully submitted for approval. Please check your list of applications to monitor the status of your pending approvals.</p>
-                                            <a href="" class="btn btn-primary">Go to my applications</a>
-                                        </div>
-                                    </div>
-                                    
-                                </form>
+								<div class="table-responsive">
+									<table class="table text-nowrap">
+										<thead>
+											<tr>
+												<th>Name</th>
+												<th>Summary</th>
+												<th>Date Added</th>
+												<th>Last Modified</th>
+												<th>Admin Tools</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
 
-                            </div>
+												<td><p class="mb-0 text-wrap">Salary Confidentiality Clause</p></td>
+												<td class="text-wrap"><p class="mb-0">Employees are prohibited from disclosing their own or others' salary details using any AI application or tool</p></td>
+												<td><p class="mb-0">23/4/2023</p></td>
+												<td><p class="mb-0">23/4/2023</p></td>
+												<td>
+													<a href="" class="rounded-pill btn btn-primary text-white">View</a>
+													<a href="" class="rounded-pill btn btn-warning text-white">Edit</a>
+													<a href="" class="rounded-pill btn btn-danger text-white">Delete</a>
+												</td>
+											</tr>
+											<tr>
+
+												<td><p class="mb-0 text-wrap">Non-Discrimination Clause</p></td>
+												<td class="text-wrap"><p class="mb-0">Use of discriminatory language or content in any AI-enabled communication or platform is strictly prohibited.</p></td>
+												<td><p class="mb-0">23/4/2023</p></td>
+												<td><p class="mb-0">23/4/2023</p></td>
+												<td>
+													<a href="" class="rounded-pill btn btn-primary text-white">View</a>
+													<a href="" class="rounded-pill btn btn-warning text-white">Edit</a>
+													<a href="" class="rounded-pill btn btn-danger text-white">Delete</a>
+												</td>
+											</tr>
+											<tr>
+
+												<td><p class="mb-0 text-wrap">Social Security Number Privacy Clause</p></td>
+												<td class="text-wrap"><p class="mb-0">It is strictly forbidden to disclose or input Social Security numbers into any AI-enabled systems, applications, or tools within the organization</p></td>
+												<td><p class="mb-0">23/4/2023</p></td>
+												<td><p class="mb-0">23/4/2023</p></td>
+												<td>
+													<a href="" class="rounded-pill btn btn-primary text-white">View</a>
+													<a href="" class="rounded-pill btn btn-warning text-white">Edit</a>
+													<a href="" class="rounded-pill btn btn-danger text-white">Delete</a>
+												</td>
+											</tr>
+											<tr>
+
+												<td><p class="mb-0 text-wrap">Provider Information Non-Disclosure Clause</p></td>
+												<td class="text-wrap"><p class="mb-0">Revealing names or details of the company's service providers or partners through AI-enabled tools or communications is strictly prohibited.</p></td>
+												<td><p class="mb-0">23/4/2023</p></td>
+												<td><p class="mb-0">23/4/2023</p></td>
+												<td>
+													<a href="" class="rounded-pill btn btn-primary text-white">View</a>
+													<a href="" class="rounded-pill btn btn-warning text-white">Edit</a>
+													<a href="" class="rounded-pill btn btn-danger text-white">Delete</a>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								
+                                <div class="offset-5">
+                                    <ul class="pagination m-2">
+                                        <li class="page-item disabled">
+                                            <a href="#" class="page-link">&larr;</a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a href="#" class="page-link">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link">...</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link">10</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link">&rarr;</a>
+                                        </li>
+                                    </ul>
+                                </div>
+							</div>
 							<!-- /marketing campaigns -->
 
 						</div>
@@ -925,26 +913,6 @@
 		</div>
 	</div> -->
 	<!-- /demo config -->
-	<script>
-		document.addEventListener('DOMContentLoaded', function() {
-			// Get the Generate button
-			var submitButton = document.getElementById('form-submitted-button');
 
-			// Get the table element
-			var form = document.getElementById('form-submitted');
-
-			// Add click event listener to the Generate button
-			submitButton.addEventListener('click', function() {
-				submitButton.style.display = 'none';
-				// Remove the 'd-none' class from the form
-				form.classList.remove('d-none');
-			});
-
-			var form1 = document.getElementById('form1');
-			form1.addEventListener("submit", function(event) {
-				event.preventDefault();
-			});
-		});
-	</script>
 </body>
 </html>
