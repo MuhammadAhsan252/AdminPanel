@@ -38,6 +38,9 @@
 .btn-outline-warning{
     background-color: white;
 }
+.btn-outline-secondary{
+    background-color: white;
+}
 
 .border-dark-primary{
     border-color: #1951A2 !important;

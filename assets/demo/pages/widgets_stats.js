@@ -415,25 +415,25 @@ var StatisticWidgets = function() {
             // Add data set
             var dataset = [
                 {
-                    "date": "04/13/14",
+                    "date": "12/13/14",
                     "alpha": "60"
                 }, {
-                    "date": "04/14/14",
+                    "date": "12/14/14",
                     "alpha": "35"
                 }, {
-                    "date": "04/15/14",
+                    "date": "12/15/14",
                     "alpha": "65"
                 }, {
-                    "date": "04/16/14",
+                    "date": "12/16/14",
                     "alpha": "50"
                 }, {
-                    "date": "04/17/14",
+                    "date": "12/17/14",
                     "alpha": "65"
                 }, {
-                    "date": "04/18/14",
+                    "date": "12/18/14",
                     "alpha": "20"
                 }, {
-                    "date": "04/19/14",
+                    "date": "12/19/14",
                     "alpha": "60"
                 }
             ];
@@ -458,8 +458,7 @@ var StatisticWidgets = function() {
                 .html(function (d) {
                     return "<ul class='list-unstyled mb-1'>" +
                         "<li>" + "<div class='fs-base my-1'><i class='ph-check me-2'></i>" + formatDate(d.date) + "</div>" + "</li>" +
-                        "<li>" + "Sales: &nbsp;" + "<span class='fw-semibold float-end'>" + d.alpha + "</span>" + "</li>" +
-                        "<li>" + "Revenue: &nbsp; " + "<span class='fw-semibold float-end'>" + "$" + (d.alpha * 25).toFixed(2) + "</span>" + "</li>" + 
+                        "<li>" + "Cost: &nbsp; " + "<span class='fw-semibold float-end'>" + "$" + ((d.alpha * 25)/8).toFixed(2) + "</span>" + "</li>" + 
                     "</ul>";
                 });
 
@@ -2511,18 +2510,18 @@ var StatisticWidgets = function() {
 
             // Interval
             setInterval(function() {
-                update(Math.random() * 100);
+                update((62 + Math.random() * 3));
             }, 1500);
 
             // Update
             function update(v) {
                 v = d3.format('.0f')(v);
                 foreground.transition()
-                    .duration(750)
+                    .duration(2000)
                     .call(arcTween, v);
 
                 value.transition()
-                    .duration(750)
+                    .duration(2000)
                     .call(textTween, v);
             }
 

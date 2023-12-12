@@ -118,7 +118,7 @@ var DashboardBars = function() {
                 tip.html(function (d, i) {
                     return '<div class="text-center">' +
                             '<h6 class="m-0">' + d + '</h6>' +
-                            '<span class="fs-sm">meetings</span>' +
+                            '<span class="fs-sm">requests</span>' +
                             '<div class="fs-sm">' + i + ':00' + '</div>' +
                         '</div>'
                 });
@@ -129,7 +129,7 @@ var DashboardBars = function() {
                 tip.html(function (d, i) {
                     return '<div class="text-center">' +
                             '<h6 class="m-0">' + d + '</h6>' +
-                            '<span class="fs-sm">statements</span>' +
+                            '<span class="fs-sm">requests</span>' +
                             '<div class="fs-sm">' + i + ':00' + '</div>' +
                         '</div>'
                 });

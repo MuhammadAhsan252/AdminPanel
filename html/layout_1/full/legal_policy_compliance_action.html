@@ -36,16 +36,16 @@
 	<script src="../../../assets/demo/charts/pages/dashboard/pies.js"></script>
 	<script src="../../../assets/demo/charts/pages/dashboard/bullets.js"></script>
 	<!-- /theme JS files -->
-
-   	<!-- Date JS files -->
-	<script src="../../../assets/js/jquery/jquery.min.js"></script>
-	<script src="../../../assets/js/vendor/ui/moment/moment.min.js"></script>
-	<script src="../../../assets/js/vendor/pickers/daterangepicker.js"></script>
-	<script src="../../../assets/js/vendor/pickers/datepicker.min.js"></script>
-
-	<script src="assets/js/app.js"></script>
-	<script src="../../../assets/demo/pages/picker_date.js"></script>
-	<!-- /DateJS files -->
+    <style>
+        .progress-bar1 {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: 
+                radial-gradient(closest-side, white 79%, transparent 80% 100%),
+                conic-gradient(rgb(255, 105, 105) 75%, pink 0);    
+        }
+    </style>
 
 </head>
 
@@ -82,7 +82,7 @@
 							<img src="../../../assets/images/demo/users/face11.jpg" class="w-32px h-32px rounded-pill" alt="">
 							<span class="status-indicator bg-success"></span>
 						</div>
-						<span class="d-none d-lg-inline-block mx-lg-2">Enrico Caruso <br>Manager</span>
+						<span class="d-none d-lg-inline-block mx-lg-2">Enrico Caruso <br>Legal</span>
 					</a>
 
 					<div class="dropdown-menu dropdown-menu-end">
@@ -145,7 +145,7 @@
 							<i class="ph-dots-three sidebar-resize-show"></i>
 						</li>
 						<li class="nav-item">
-							<a href="manager_dashboard.html" class="nav-link">
+							<a href="legal_dashboard.html" class="nav-link">
 								<i class="fa-solid fa-home"></i>
 								<span>Dashboard</span>
 							</a>
@@ -156,51 +156,22 @@
 								<span>AI Applications</span>
 							</a>
 							<ul class="nav-group-sub collapse">
-								<li class="nav-item"><a href="manager_overview.html" class="nav-link">Overview</a></li>
-								<li class="nav-item"><a href="manager_pending.html" class="nav-link">Pending</a></li>
-								<li class="nav-item"><a href="manager_review_api.html" class="nav-link">Review APIs</a></li>
-								<li class="nav-item"><a href="manager_deploy_api.html" class="nav-link">Deploy AI provider</a></li>
-							</ul>
-						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link">
-								<i class="fa-regular fa-shield"></i>
-								<span>Policy Compliance</span>
-							</a>
-							<ul class="nav-group-sub collapse">
-								<li class="nav-item"><a href="manager_policy_compliance.html" class="nav-link">Compliance Review</a></li>
-								<li class="nav-item"><a href="manager_policy_violation.html" class="nav-link">Violations Log</a></li>
-							</ul>
-						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link">
-								<i class="fa-solid fa-guarani-sign"></i>
-								<span>Policy Admin</span>
-							</a>
-							<ul class="nav-group-sub collapse">
-								<li class="nav-item"><a href="manager_create_policy.html" class="nav-link">Create Policy</a></li>
-								<li class="nav-item"><a href="manager_internal_policies.html" class="nav-link">View Internal Policies</a></li>
-								<li class="nav-item"><a href="manager_external_policies.html" class="nav-link">View External Policies</a></li>
+								<li class="nav-item"><a href="legal_overview.html" class="nav-link">Overview</a></li>
 							</ul>
 						</li>
                         <li class="nav-item">
-							<a href="manager_risk_visualizer.html" class="nav-link">
+							<a href="legal_risk_visualizer.html" class="nav-link">
 								<i class="fa-solid fa-circle-info"></i>
 								<span>
 									Risks Visualizer
 								</span>
 							</a>
 						</li>
-						<li class="nav-item nav-item-submenu">
-							<a href="#" class="nav-link">
-								<i class="fa-solid fa-user-plus"></i>
-								<span>Team</span>
+						<li class="nav-item">
+							<a href="legal_report_module.html" class="nav-link">
+								<i class="fa-solid fa-file"></i>
+								<span>Report Module</span>
 							</a>
-							<ul class="nav-group-sub collapse">
-								<li class="nav-item"><a href="manager_add_user.html" class="nav-link">Add User</a></li>
-								<li class="nav-item"><a href="manager_view_users.html" class="nav-link">View users</a></li>
-								<li class="nav-item"><a href="manager_team_permissions.html" class="nav-link">Permissions</a></li>
-							</ul>
 						</li>
 						<!-- /page kits -->
 
@@ -317,9 +288,9 @@
 					<div class="page-header-content d-lg-flex border-top">
 						<div class="d-flex">
 							<div class="breadcrumb py-2">
-								<a href="manager_dashboard.html" class="breadcrumb-item"><i class="ph-house"></i></a>
-								<a href="manager_dashboard.html" class="breadcrumb-item">Home</a>
-								<span class="breadcrumb-item active">Report Module</span>
+								<a href="legal_dashboard.html" class="breadcrumb-item"><i class="ph-house"></i></a>
+								<a href="legal_dashboard.html" class="breadcrumb-item">Home</a>
+								<span class="breadcrumb-item active">Policy Compliance</span>
 							</div>
 
 							<a href="#breadcrumb_elements" class="btn btn-light align-self-center collapsed d-lg-none border-transparent rounded-pill p-0 ms-auto" data-bs-toggle="collapse">
@@ -378,25 +349,26 @@
 					<!-- Dashboard content -->
 					<div class="row">
 						<div class="col-12">
-							<h2 class="mb-3">Report Module</h2>
-							<p>The Report Module enables you to generate reports on the overall security, vulnerabilities, and policy compliance of AI projects. These reports can be shared with different stakeholders to adhere to accounting and transparency policies.</p>
+							<h2 class="mb-3">Policy Compliance Checklist</h2>
+							<p>The Policy Compliance Checklist enables you to create an individual checklist of items that require your attention in order to achieve compliance with the policy.</p>
 						</div>
 						<div class="col-12">
 
 							<!-- Marketing campaigns -->
 							<div class="card data-card">
+								<div class="card-header d-flex align-items-center">
+									<h5 class="mb-0">Filters</h5>
+								</div>
 
 								<div class="card-body d-sm-flex align-items-sm-center justify-content-left flex-sm-wrap">
-
-                                    <div class="d-flex align-items-center mb-3 mb-sm-0">
+									<div class="d-flex align-items-center mb-3 mb-sm-0">
 										<!-- <div id="campaign-status-pie"></div> -->
 										<div class="ms-3">
 											<div class="d-flex align-items-center">
 												<h6 class="mb-0">Select AI Application</h6>
 											</div>
 											<select class="form-select form-select-sm w-auto flex-grow-0">
-												<option value="1" selected>Select From the List</option>
-												<option value="CorpWrite">CorpWrite</option>
+												<option value="CorpWrite" selected>CorpWrite</option>
 												<option value="TalentAssess AI">TalentAssess AI</option>
 												<option value="MarketVisual AI">MarketVisual AI</option>
 												<option value="HelpMate AI">HelpMate AI</option>
@@ -409,97 +381,97 @@
 											</select>
 										</div>
 									</div>
-								</div>
-							</div>
 
-                            <h3>
-                                Select Elements to include 
-                                <button type="button" class="btn btn-primary" style="float: right;">Generate</button>
-                            </h3>
-                            
-                            <div class="row">
-                                <div class="col-lg-3">
-                                    <div class="form-check mb-2">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label" for="cc_ls_c">Checked 1</label>
-                                    </div>
-                                    <div class="form-check mb-2">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label" for="cc_ls_c">Checked 2</label>
-                                    </div>
-                                    <div class="form-check mb-2">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label" for="cc_ls_c">Checked 3</label>
-                                    </div>
-                                    <div class="form-check mb-2">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label" for="cc_ls_c">Checked 4</label>
-                                    </div>
-                                    <div class="form-check mb-2">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label" for="cc_ls_c">Checked 5</label>
-                                    </div>
-                                    <div class="form-check mb-2">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label" for="cc_ls_c">Checked 6</label>
-                                    </div>
-                                    
+									<div class="d-flex align-items-center bg-white text-black mb-3 mb-sm-0 ms-3 p-2 border rounded">
+										<!-- <div id="campaign-status-pie"></div> -->
+										<div class="ms-3">
+											<div class="d-flex align-items-center">
+												<h6 class="mb-0">Credit Risk Analysis</h6>
+											</div>
+										</div>
+                                        <div class="ms-3">
+											<div class="d-flex align-items-center text-danger">
+                                                <div class="progress-bar1">
+                                                    <progress value="77" min="0" max="100" style="visibility:hidden;height:0;width:0;">75%</progress>
+                                                </div>
+												<h6 class="mb-0 ms-2">23% Policy Compliance </h6>
+											</div>
+										</div>
+                                        <div class="ms-3">
+											<div class="d-flex align-items-center text-danger">
+                                                <i class="fa-solid fa-lg fa-triangle-exclamation"></i>
+												<h6 class="mb-0 ms-2">1 Action Required </h6>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="table-responsive">
+									<table class="table text-nowrap">
+										<thead>
+											<tr>
+												<th>Policy name</th>
+												<th>Progress</th>
+												<th>Status</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><p class="mb-0 text-wrap">NYC Local Law 144: Bias audits for automated employment</p></td>
+												<td>
+                                                    <div class="progress rounded-pill table-progress">
+                                                        <div class="progress-bar bg-danger" style="width: 55%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <a href="" class="badge rounded-pill bg-danger text-white">Action Needed</a>
+                                                </td>
+											</tr>
+                                            <tr>
+                                                <td class="text-wrap" colspan="2"><p class="mb-0 p-1 border-2 border rounded border-primary">AEDTs must undergo a bias audit within one year before use.</p></td>
+                                                <td>
+                                                    <a href="" class="badge rounded-pill text-success">Passed</a>
+                                                </td>
+											</tr>
+                                            <tr>
+                                                <td class="text-wrap" colspan="2"><p class="mb-0 p-1 border-2 border rounded border-primary">Details of the bias audit must be publicly accessible.</p></td>
+                                                <td>
+                                                    <a href="" class="badge rounded-pill text-danger">Not Passed</a>
+                                                </td>
+											</tr>
+                                            <tr>
+                                                <td class="text-wrap" colspan="2"><p class="mb-0 p-1 border-2 border rounded border-primary"> Employers and employment agencies must notify candidates or employees about the use of such tools, the job qualifications and characteristics it will assess, and, upon request, the type of data collected and the data retention policy.</p></td>
+                                                <td>
+                                                    <a href="" class="badge rounded-pill text-success">Passed</a>
+                                                </td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+                                <div class="offset-5">
+                                    <ul class="pagination m-2">
+                                        <li class="page-item disabled">
+                                            <a href="#" class="page-link">&larr;</a>
+                                        </li>
+                                        <li class="page-item active">
+                                            <a href="#" class="page-link">1</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link">2</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link">...</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link">10</a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a href="#" class="page-link">&rarr;</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="col-lg-3">
-                                    <div class="form-check mb-2">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label" for="cc_ls_c">Checked 1</label>
-                                    </div>
-                                    <div class="form-check mb-2">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label" for="cc_ls_c">Checked 2</label>
-                                    </div>
-                                    <div class="form-check mb-2">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label" for="cc_ls_c">Checked 3</label>
-                                    </div>
-                                    <div class="form-check mb-2">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label" for="cc_ls_c">Checked 4</label>
-                                    </div>
-                                    <div class="form-check mb-2">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label" for="cc_ls_c">Checked 5</label>
-                                    </div>
-                                    <div class="form-check mb-2">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label" for="cc_ls_c">Checked 6</label>
-                                    </div>
-                                    
-                                </div>
-                                <div class="col-lg-3">
-                                    <div class="form-check mb-2">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label" for="cc_ls_c">Checked 1</label>
-                                    </div>
-                                    <div class="form-check mb-2">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label" for="cc_ls_c">Checked 2</label>
-                                    </div>
-                                    <div class="form-check mb-2">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label" for="cc_ls_c">Checked 3</label>
-                                    </div>
-                                    <div class="form-check mb-2">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label" for="cc_ls_c">Checked 4</label>
-                                    </div>
-                                    <div class="form-check mb-2">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label" for="cc_ls_c">Checked 5</label>
-                                    </div>
-                                    <div class="form-check mb-2">
-                                        <input type="checkbox" class="form-check-input">
-                                        <label class="form-check-label" for="cc_ls_c">Checked 6</label>
-                                    </div>
-                                    
-                                </div>
-                            </div>
+							</div>
+							<!-- /marketing campaigns -->
 
 						</div>
 					</div>
@@ -569,19 +541,19 @@
 				<div class="d-flex align-items-start mb-3">
 					<div class="me-3">
 						<div class="bg-success bg-opacity-10 text-success rounded-pill">
-							<i class="ph-check p-2"></i>
+							<i class="ph-users p-2"></i>
 						</div>
 					</div>
 					<div class="flex-fill">
-						Nick has submitted an AI project to be approved. 
+						New Ai external regulation has been submitted
 						<br>
 						<a href="#" class="btn btn-light btn-sm">
 							Review
 						</a>
-
-						<div class="fs-sm text-muted mt-1">4 hours ago</div>
+						<div class="fs-sm text-muted mt-1">1 hour ago</div>
 					</div>
 				</div>
+
 				<div class="d-flex align-items-start mb-3">
 					<div class="me-3">
 						<div class="bg-success bg-opacity-10 text-success rounded-pill">
@@ -589,7 +561,20 @@
 						</div>
 					</div>
 					<div class="flex-fill">
-						Compliance department created a report of 4 AI applications
+						Application #3 has entered full compliance
+
+						<div class="fs-sm text-muted mt-1">3 hours ago</div>
+					</div>
+				</div>
+
+				<div class="d-flex align-items-start mb-3">
+					<div class="me-3">
+						<div class="bg-success bg-opacity-10 text-success rounded-pill">
+							<i class="ph-check p-2"></i>
+						</div>
+					</div>
+					<div class="flex-fill">
+						Report for application #6 has been generated by the legal department
 
 						<div class="bg-light rounded p-2 my-2">
 							<div class="d-flex align-items-center">
@@ -614,16 +599,19 @@
 
 				<div class="d-flex align-items-start mb-3">
 					<div class="me-3">
-						<div class="bg-success bg-opacity-10 text-success rounded-pill">
-							<i class="ph-check p-2"></i>
+						<div class="bg-warning bg-opacity-10 text-warning rounded-pill">
+							<i class="ph-warning p-2"></i>
 						</div>
 					</div>
 					<div class="flex-fill">
-						Application #11 has been successfully deployed
-						<div class="fs-sm text-muted mt-1">15 hours ago</div>
+						Application #12 is non compliant
+						<br>
+						<a href="#" class="btn btn-light btn-sm">
+							Review
+						</a>
+						<div class="fs-sm text-muted mt-1">12 hours ago</div>
 					</div>
 				</div>
-
 			</div>
 
 			<div class="bg-light fw-medium py-2 px-3">Older notifications</div>
@@ -631,16 +619,11 @@
 				<div class="d-flex align-items-start mb-3">
 					<div class="me-3">
 						<div class="bg-success bg-opacity-10 text-success rounded-pill">
-							<i class="ph-users p-2"></i>
+							<i class="ph-check p-2"></i>
 						</div>
 					</div>
 					<div class="flex-fill">
-						4 New users added to the platform
-
-						<br>
-						<a href="#" class="btn btn-light btn-sm">
-							Review
-						</a>
+						openai GPT4 has been provisioned inside the platform
 
 						<div class="fs-sm text-muted mt-1">2 days ago</div>
 					</div>
@@ -654,7 +637,11 @@
 						</div>
 					</div>
 					<div class="flex-fill">
-						Internal Policy #8 has been successfully implemented
+						New internal regulation has been submitted
+						<br>
+						<a href="#" class="btn btn-light btn-sm">
+							Review
+						</a>
 
 						<div class="fs-sm text-muted mt-1">3 days ago</div>
 					</div>
@@ -667,22 +654,26 @@
 						</div>
 					</div>
 					<div class="flex-fill">
-						openai GPT4 has been provisioned inside the platform
+						Report for application #5 has been generated by the legal department
 
-						<div class="fs-sm text-muted mt-1">4 days ago</div>
-					</div>
-				</div>
-
-				<div class="d-flex align-items-start mb-3">
-					<div class="me-3">
-						<div class="bg-success bg-opacity-10 text-success rounded-pill">
-							<i class="ph-check p-2"></i>
+						<div class="bg-light rounded p-2 my-2">
+							<div class="d-flex align-items-center">
+								<div class="me-2">
+									<img src="../../../assets/images/icons/pdf.svg" width="34" height="34" alt="">
+								</div>
+								<div class="flex-fill">
+									compliance_report.pdf
+									<div class="fs-sm text-muted">112KB</div>
+								</div>
+								<div class="ms-2">
+									<button type="button" class="btn btn-flat-dark text-body btn-icon btn-sm border-transparent rounded-pill">
+										<i class="ph-arrow-down"></i>
+									</button>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="flex-fill">
-						Maria Vásquez has been added as compliance to the platform
 
-						<div class="fs-sm text-muted mt-1">8 days ago</div>
+						<div class="fs-sm text-muted mt-1">7 days ago</div>
 					</div>
 				</div>
 

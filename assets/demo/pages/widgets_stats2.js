@@ -2511,7 +2511,7 @@ var StatisticWidgets = function() {
 
             // Interval
             setInterval(function() {
-                update(Math.random() * 100);
+                update(65);
             }, 1500);
 
             // Update

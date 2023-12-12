@@ -70,10 +70,9 @@ var GoogleColumnBasic = function() {
             // Data
             var data = google.visualization.arrayToDataTable([
                 ['Category', 'Risk'],
-                ['AI',  1000],
-                ['Proxy',  1170],
-                ['AI',  6600],
-                ['Proxy',  1030]
+                ['Regulatory',  25],
+                ['Operational',  20],
+                ['Reputational',  7],
             ]);
         
             // Options
@@ -93,7 +92,7 @@ var GoogleColumnBasic = function() {
                     }
                 },
                 vAxis: {
-                    title: 'Risk', // Update to show sales only
+                     // Update to show sales only
                     titleTextStyle: {
                         fontSize: 14,
                         italic: false,
