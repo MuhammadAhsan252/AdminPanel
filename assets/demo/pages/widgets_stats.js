@@ -3482,6 +3482,7 @@ var StatisticWidgets = function() {
 
     return {
         init: function() {
+            _progressArcSingle("#arc_single", 78);
             // _areaChartWidget("#chart_area_basic", 50, '#5C6BC0');
             // _areaChartWidget("#chart_area_color", 50, 'rgba(255,255,255,0.75)');
 
@@ -3510,7 +3511,7 @@ var StatisticWidgets = function() {
             // _animatedDonut("#donut_basic_stats", 120);
             // _animatedDonutWithLegend("#donut_basic_legend", 120);
             // _donutWithDetails("#donut_basic_details", 146);
-            _progressArcSingle("#arc_single", 78);
+            
             // _progressArcMulti("#arc_multi", 78, 700);
             // _roundedProgressSingle("#rounded_progress_single", 150, 700, '#EC407A');
             // _roundedProgressMultiple("#rounded_progress_multiple", 140);
