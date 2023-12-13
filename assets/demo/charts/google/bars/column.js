@@ -69,17 +69,19 @@ var GoogleColumnBasic = function() {
         
             // Data
             var data = google.visualization.arrayToDataTable([
-                ['Category', 'Risk'],
-                ['Regulatory',  25],
-                ['Operational',  20],
-                ['Reputational',  7],
+                ['Category', 'Domain'],
+                ['Chatbot',  2],
+                ['Content Generation',  10],
+                ['AI Recruiting',  8],
+                ['Auto Grading',  5],
+                ['Image Analysis',  2]
             ]);
         
             // Options
             var options_column = {
                 fontName: 'var(--body-font-family)',
                 height: 400,
-                fontSize: 12,
+                fontSize: 10,
                 backgroundColor: 'transparent',
                 chartArea: {
                     left: '5%',
