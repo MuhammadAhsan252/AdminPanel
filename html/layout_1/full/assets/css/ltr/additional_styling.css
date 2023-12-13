@@ -2,6 +2,10 @@
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
 }
+.dashboard-table td{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
 
 .input-group-table{
     width: 200px;
