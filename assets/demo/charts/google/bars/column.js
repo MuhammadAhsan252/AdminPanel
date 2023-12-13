@@ -69,7 +69,7 @@ var GoogleColumnBasic = function() {
         
             // Data
             var data = google.visualization.arrayToDataTable([
-                ['Category', 'Domain'],
+                ['Category', 'AI Applications'],
                 ['Chatbot',  2],
                 ['Content Generation',  10],
                 ['AI Recruiting',  8],
@@ -126,7 +126,7 @@ var GoogleColumnBasic = function() {
                     }
                 },
                 series: {
-                    0: { color: '#2ec7c9', visibleInLegend: true }, // Make sales series visible
+                    0: { color: '#2ec7c9', visibleInLegend: false }, // Make sales series visible
                     1: { color: '#b6a2de', visibleInLegend: false } // Hide expenses series
                 }
             };
